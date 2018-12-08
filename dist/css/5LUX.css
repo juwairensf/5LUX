@@ -1,13 +1,1 @@
-body {
-  height: 100%;
-  width: 100%;
-  background: #222; }
-  body header {
-    height: 100px;
-    background: #ddd; }
-    body header a {
-      color: chartreuse; }
-      body header a:hover {
-        color: darkblue; }
-      body header a_element {
-        overflow: hidden; }
+body{height:100px;width:200px;background:#00bfff}
