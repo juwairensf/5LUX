@@ -1,0 +1,25 @@
+{
+  "name": "5LUX",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "nodemon": "^1.18.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "node ./node_modules/gulp/bin/gulp"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
