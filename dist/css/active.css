@@ -1,7 +1,22 @@
+@charset "UTF-8";
 html, body {
-  height: 100%;
-  width: 100%; }
+  width: 100%;
+  height: 80px;
+  min-width: 1300px;
+  position: relative; }
 
+/* 头部广告开始 */
+#active {
+  width: 100%;
+  background: #4200de; }
+  #active a {
+    display: block;
+    width: 1300px;
+    margin: 0 auto; }
+    #active a img {
+      display: block; }
+
+/* 头部广告结束 */
 #right-menu {
   position: fixed;
   z-index: 90;
@@ -70,116 +85,48 @@ html, body {
         background-position: -436px -124px; }
 
 header {
-  width: 100%;
-  height: 98px;
-  min-width: 1210px; }
-  header .logo-container {
-    width: 1210px;
-    height: 100%;
-    margin: 0 auto; }
-    header .logo-container .logo {
-      width: 100%;
-      height: 98px; }
-      header .logo-container .logo a {
-        width: 244px;
-        float: left;
-        display: block; }
-        header .logo-container .logo a img {
-          width: 100%;
-          height: 100%; }
-      header .logo-container .logo span {
-        display: block;
-        height: 44px;
-        width: 2px;
-        background: #ccc;
-        float: left;
-        margin: 27px 18px; }
-      header .logo-container .logo h2 {
-        float: left;
-        height: 98px;
-        line-height: 98px;
-        font-size: 22px;
-        color: #999; }
-      header .logo-container .logo .logo-right {
-        width: 182px;
-        height: 100%;
-        float: right;
-        line-height: 98px; }
-        header .logo-container .logo .logo-right i {
-          display: block;
-          height: 19px;
-          width: 19px;
-          padding-right: 10px;
-          background: url(http://www.5lux.com/vendor/images/5lux/login/new/phone-logo.png) no-repeat;
-          float: left;
-          margin-top: 37px; }
-        header .logo-container .logo .logo-right p {
-          color: #666;
-          font-size: 13px;
-          height: 98px;
-          line-height: 98px;
-          float: left; }
+  background: #ddd; }
+  header .top {
+    height: 30px; }
+  header .middle {
+    height: 110px; }
+  header nav {
+    height: 38px; }
 
 section {
   width: 100%;
-  height: 536px;
-  background: #262626;
-  min-width: 1210px; }
-  section .wrap-container {
+  height: 3149px; }
+  section .section-container {
     width: 1210px;
-    margin: 0 auto;
     height: 100%;
-    background: url(http://img.5lux.com.cn/vendor/images/5lux/login/new/login_background1.jpg) no-repeat; }
-    section .wrap-container .login-box {
-      float: right;
-      margin-right: 40px;
-      padding: 30px 0; }
-      section .wrap-container .login-box .login {
-        width: 340px;
-        height: 476px;
-        background: #fff;
-        padding: 0 30px; }
-        section .wrap-container .login-box .login .login-nav {
-          width: 340px;
-          height: 20px;
-          font-size: 20px;
-          line-height: 20px;
-          color: #999;
-          margin: 0 auto;
-          padding-top: 34px; }
-          section .wrap-container .login-box .login .login-nav a {
-            display: block;
-            float: left;
-            text-align: center;
-            font-size: 20px;
-            line-height: 20px;
-            font-weight: 400;
-            width: 49%;
-            text-align: center;
-            cursor: pointer; }
-          section .wrap-container .login-box .login .login-nav a:nth-child(1) {
-            border-right: 2px solid #999; }
-        section .wrap-container .login-box .login .login-switch {
-          width: 400px;
-          height: 380px;
-          margin-left: -30px;
-          margin-top: 70px;
-          margin-bottom: 70px;
-          background: deeppink; }
-          section .wrap-container .login-box .login .login-switch .login-scan {
-            width: 165px;
-            height: 165px; }
-            section .wrap-container .login-box .login .login-switch .login-scan img {
-              height: 100%;
-              width: 100%; }
-            section .wrap-container .login-box .login .login-switch .login-scan img:nth-child(2) {
-              display: none; }
+    margin: 0 auto; }
+    section .section-container .left {
+      float: left; }
+      section .section-container .left ul {
+        width: 165px;
+        height: 46px;
+        margin: 30px 0; }
+    section .section-container .right {
+      border: 1px solid #ccc;
+      min-height: 800px;
+      float: left;
+      width: 998px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: 20px; }
+      section .section-container .right .right-con {
+        margin: 24px auto;
+        padding: 0 24px; }
+        section .section-container .right .right-con p img {
+          display: block; }
 
 footer {
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
   width: 100%;
   height: 601px;
   min-width: 1210px;
-  background: url(http://img.5lux.com.cn/vendor/images/v30/footer_message_bg.jpg) center; }
+  background: url(http://img.5lux.com.cn/vendor/images/v30/footer_message_bg.jpg) -1 center; }
   footer .top {
     width: 1210px;
     height: 117px;
@@ -273,27 +220,3 @@ footer {
       margin-top: 23px; }
       footer .bottom p:nth-child(4) img {
         cursor: pointer; }
-
-#popup {
-  height: 120px;
-  width: 100%;
-  background: url(http://img550.5lux.com.cn/2016/12/27/mn/148282825934_2x120.png) repeat-x center top;
-  position: fixed;
-  bottom: 0;
-  left: 0; }
-  #popup .popup-box {
-    width: 1210px;
-    height: 120px;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    margin-left: -605px;
-    z-index: 2; }
-    #popup .popup-box a {
-      display: block;
-      width: 70px;
-      height: 47px;
-      position: absolute;
-      z-index: 3;
-      right: 0;
-      top: 0; }

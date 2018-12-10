@@ -1,1 +1,1 @@
-"use strict";var b=20;
+let b=20;

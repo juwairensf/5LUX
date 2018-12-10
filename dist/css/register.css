@@ -130,50 +130,91 @@ section {
     margin: 0 auto;
     height: 100%;
     background: url(http://img.5lux.com.cn/vendor/images/5lux/login/new/login_background1.jpg) no-repeat; }
-    section .wrap-container .login-box {
+    section .wrap-container .register-box {
       float: right;
       margin-right: 40px;
       padding: 30px 0; }
-      section .wrap-container .login-box .login {
+      section .wrap-container .register-box .register {
         width: 340px;
         height: 476px;
         background: #fff;
         padding: 0 30px; }
-        section .wrap-container .login-box .login .login-nav {
-          width: 340px;
-          height: 20px;
+        section .wrap-container .register-box .register h2 {
+          height: 90px;
+          text-align: center;
+          line-height: 90px;
           font-size: 20px;
-          line-height: 20px;
-          color: #999;
-          margin: 0 auto;
-          padding-top: 34px; }
-          section .wrap-container .login-box .login .login-nav a {
-            display: block;
+          color: #000; }
+        section .wrap-container .register-box .register form {
+          width: 340px;
+          height: 386px; }
+          section .wrap-container .register-box .register form p {
+            padding: 8px 0; }
+          section .wrap-container .register-box .register form input {
+            border: 1px solid #ccc;
+            width: 340px;
+            height: 50px;
+            box-sizing: border-box;
+            padding: 0 19px; }
+          section .wrap-container .register-box .register form p:nth-child(1) {
+            padding-top: 0; }
+          section .wrap-container .register-box .register form p:nth-child(2) input {
+            width: 182px;
+            margin-right: 24px; }
+          section .wrap-container .register-box .register form p:nth-child(2) button {
+            width: 130px;
+            height: 50px;
+            background: #f2f2f2;
+            line-height: 50px;
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+            border: none;
+            outline: none; }
+          section .wrap-container .register-box .register form p:nth-child(4) {
+            padding-bottom: 0; }
+          section .wrap-container .register-box .register form p:nth-child(5) {
+            padding: 0; }
+            section .wrap-container .register-box .register form p:nth-child(5) button {
+              transition: all .5s;
+              width: 340px;
+              height: 50px;
+              border: none;
+              outline: none;
+              background: #333;
+              text-align: center;
+              line-height: 50px;
+              font-size: 18px;
+              margin: 24px 0 20px;
+              color: #fff; }
+          section .wrap-container .register-box .register form .protocol i {
+            margin-top: 3px;
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: url(http://www.5lux.com/vendor/images/5lux/login/new/is_yes.png) no-repeat;
+            margin-right: 3px;
             float: left;
-            text-align: center;
-            font-size: 20px;
-            line-height: 20px;
-            font-weight: 400;
-            width: 49%;
-            text-align: center;
-            cursor: pointer; }
-          section .wrap-container .login-box .login .login-nav a:nth-child(1) {
-            border-right: 2px solid #999; }
-        section .wrap-container .login-box .login .login-switch {
-          width: 400px;
-          height: 380px;
-          margin-left: -30px;
-          margin-top: 70px;
-          margin-bottom: 70px;
-          background: deeppink; }
-          section .wrap-container .login-box .login .login-switch .login-scan {
-            width: 165px;
-            height: 165px; }
-            section .wrap-container .login-box .login .login-switch .login-scan img {
-              height: 100%;
-              width: 100%; }
-            section .wrap-container .login-box .login .login-switch .login-scan img:nth-child(2) {
-              display: none; }
+            vertical-align: middle; }
+          section .wrap-container .register-box .register form .protocol span {
+            display: inline-block;
+            font-size: 13px;
+            height: 14px;
+            line-height: 14px;
+            color: #999; }
+          section .wrap-container .register-box .register form .protocol .fir-link {
+            display: inline-block;
+            font-size: 13px;
+            height: 14px;
+            line-height: 14px;
+            color: #333; }
+          section .wrap-container .register-box .register form .protocol .sec-link {
+            color: #f90;
+            display: inline-block;
+            font-size: 13px;
+            height: 14px;
+            line-height: 14px;
+            margin-left: 22px; }
 
 footer {
   width: 100%;

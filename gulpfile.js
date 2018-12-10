@@ -52,7 +52,7 @@ gulp.task("html",()=>{
 // js的转存及转义；
 gulp.task("js",()=>{
     return gulp.src(["./src/js/*.js"])
-    .pipe(babel())
+    // .pipe(babel())
     // .pipe(uglify())
     .pipe(gulp.dest("./dist/js"))
     .pipe(connect.reload());
@@ -67,6 +67,11 @@ gulp.task("sass",()=>{
     .pipe(gulp.dest("./dist/css"))
     .pipe(connect.reload());
 })
+// images的转存；
+gulp.task("images",()=>{
+    return gulp.src(["./src/images/*.png"]).pipe(gulp.dest("./dist/images"))
+    .pipe(connect.reload());
+})
 
 
 
@@ -75,5 +80,6 @@ gulp.task("watch",()=>{
     gulp.watch("./src/*.html",["html"]);
     gulp.watch("./src/sass/*.scss",["sass"]);
     gulp.watch("./src/js/*.js",["js"]);
+    gulp.watch("./src/images/*.png",["images"]);
 })
 gulp.task("default",["watch","connect"]);
