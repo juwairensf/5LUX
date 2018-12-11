@@ -49,6 +49,12 @@ gulp.task("html",()=>{
     .pipe(connect.reload());
 })
 
+// json的转存；
+gulp.task("json",()=>{
+    return gulp.src(["./src/json/*.json"]).pipe(gulp.dest("./dist/json"))
+    .pipe(connect.reload());
+})
+
 // js的转存及转义；
 gulp.task("js",()=>{
     return gulp.src(["./src/js/*.js"])
@@ -81,5 +87,6 @@ gulp.task("watch",()=>{
     gulp.watch("./src/sass/*.scss",["sass"]);
     gulp.watch("./src/js/*.js",["js"]);
     gulp.watch("./src/images/*.png",["images"]);
+    gulp.watch("./src/json/*.json",["json"]);
 })
 gulp.task("default",["watch","connect"]);

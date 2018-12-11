@@ -1,0 +1,99 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: #298a7e url(http://img550.5lux.com.cn/2018/12/04/vw/154390657274_1920x1080.jpg) no-repeat center fixed;
+}
+header{
+    .con1{
+        background: url(http://img550.5lux.com.cn/2018/12/04/pq/154390647448_1920x639.png) center top no-repeat;
+        margin: 0 auto;
+        height: 639px;
+    }
+    .con2{
+        background: url(http://img550.5lux.com.cn/2018/12/04/uv/154390647452_1920x254.png) no-repeat center;
+        height: 254px;
+    }
+   
+}
+section{
+    width: 1080px;
+    margin: 0 auto;
+    font-family: '微软雅黑';
+    .img{
+        img{
+            display: block;
+        }
+    }
+    .container-goods{
+        padding: 20px 50px;
+        .goods-list{
+            float: left;
+            width: 235px;
+            height: 405px;
+            background: #fff;
+            margin: 0 5px 15px;
+            .good-image{
+                width: 235px;
+                height: 257px;
+                padding-bottom: 22px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .good-title{
+                font-size: 12px;
+                font-weight: bold;
+                color: #000;
+                text-align: left;
+                padding: 0 10px 8px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .good-describe{
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                word-break: break-all;
+                line-height: 18px;
+                font-size: 12px;
+                color: #000;
+                text-align: left;
+                padding: 0 10px;
+                margin-bottom: 10px;
+                height: 35px;
+            }
+            .good-detail{
+                span{
+                    display: block;
+                    float: left;
+                    height: 24px;
+                    line-height: 24px;
+                }
+                span:nth-child(1){
+                    padding-left: 10px;
+                    display: inline-block;
+                    font-size: 18px;
+                    color: #ff3333;
+                    font-weight: bold;
+                }
+                span:nth-child(2){
+                    text-decoration: line-through;
+                    display: inline-block;
+                    padding: 0;
+                    color: #999;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background: url(http://img550.5lux.com.cn/2018/12/04/ef/154390647485_1920x162.png) no-repeat center;
+    height: 162px;
+}

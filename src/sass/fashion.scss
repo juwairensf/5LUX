@@ -127,7 +127,8 @@ header{
     }
     nav{
         height: 38px;
-        background: #000;
+        border-bottom: 2px solid #ddd;
+        background:url(http://www.5lux.com/vendor/images/v30/navi_1pxbg.png) repeat-x;
         .nav-con{
             width: 1210px;
             margin: 0 auto;
@@ -160,11 +161,15 @@ header{
                         margin-left: 23px;
                     }
                 }
+            
                 li:nth-child(1){
                     width: 130px;
                     background: #CF0101;
                 }
-                li:nth-child(9){
+                .sea{
+                    margin-left: 13px;
+                }
+                li:last-child{
                     float:right;
                     margin-right: 10px;
                     width: 130px;
@@ -191,120 +196,205 @@ header{
 }
 // 头部结束；
 
-// 内容开始；
-section{
+// 筛选开始；
+#filter{
     width: 100%;
-    height: 3149px;
-    .section-container{
-        width: 1210px;
-        height: 100%;
+    min-width: 1210px;
+    .filter-con{
+        width: 1000px;
+        height: 72px;
         margin: 0 auto;
-        .left{
-            float: left;
-            margin-top: 30px;
-            width: 165px;
-            background: #f3f2f2;
-            border: 1px solid #ccc;
-            float: left;
-            border-bottom: 2px solid #ccc;
-            ul{
-                border-bottom: 1px solid #ccc;
-            }
-            ul:nth-child(odd){
-                cursor: pointer;
-                width: 165px;
-                height: 45px;
-                background: rgb(242, 242, 242);
-                &:hover{
-                    background: #fff;
-                }
-                li{
-                    padding-left: 18px;
-                    i{
-                        float: left;
-                        display: block;
-                        height: 7px;
-                        width: 12px;
-                        background: url(../images/share02.png) no-repeat -448px -325px;
-                        margin-right: 12px;
-                        margin-top: 20px;
-                        
-                    }
-                    .active{
-                        width:6px;
-                        height:12px;
-                        background: url(http://www.5lux.com/vendor/images/v30/share02.png) no-repeat -464px -325px;
-                        margin-right: 18px;
-                        margin-top: 16px;
-                    }
-                    a{
-                        float: left;
-                        display: block;
-                        height: 45px;
-                        width: 84px;
-                        text-align: center;
-                        line-height: 45px;
-                        color: #d00000;
-                        font-size: 14px;
-                        &:hover{
-                            color: #C69C6D;
-                        }
-                    }
-                }
-            }
-            ul:nth-child(even){
-                border-bottom: 1px solid #ccc;
-                padding: 0 10px;
-                background: #f7f7f7;
+        background: #DBDBDB;
+        p{
+            font-size: 0;
+            a{
+                font-family: "微软雅黑";
+                margin-top: 20px;
                 display: block;
-                li{
-                    border-bottom: 1px dashed #c9c9c9;
-                    height: 35px;
-                    padding-left: 32px;
-                    line-height: 35px;
-                    a{
-                        color: #000;
-                        &:hover{
-                            color: #d00000;
-                            text-decoration: underline;
-                        }
-                    }
-                    
-
+                font-size: 12px;
+                float: left;
+                color: #000;
+                height: 24px;
+                line-height: 24px;
+                width: 96px;
+                background: #fff;
+                text-align: center;
+                margin-right: 30px;
+                &:hover{
+                    background: rgb(223, 26, 34);
+                    color: #fff;
                 }
             }
-            .ul-active{
-                display: none;
+            a:nth-child(1){
+                width: 96px;
+                margin-right: 20px;
+                background: none;
+                margin-right: 0;
+                &:hover{
+                    color: #000;
+                }
             }
-        }
-        .right{
-            border: 1px solid #ccc;
-            min-height: 800px;
-            float: left;
-            width: 998px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            margin-left: 20px;
-            .right-con{
-                margin: 24px auto;
-                padding: 0 24px;
-                p{
-                   img{
-                       display: block;
-                   } 
+            a:nth-child(2){
+                width: 70px;
+                height: 24px;
+                background: #000;
+                color: #fff;
+                margin-left: 30px;
+                &:hover{
+                    background: rgb(223, 26, 34);
                 }
             }
         }
     }
 }
+// 筛选结束；
+
+// 轮播图开始；
+#banner{
+    margin-top: 30px;
+    height: 260px;
+    width:100%;
+    position: relative;
+}
+#banner .btns{
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    width: 1000px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#banner .btns .left{
+    width: 20px;
+    height: 60px;
+    float: left;
+    cursor: pointer;
+    margin-left: 5px;
+
+}
+#banner .btns .right{
+    width: 20px;
+    height: 60px;
+    float: right;
+    cursor: pointer;
+    margin-right: 5px;
+}
+#banner .btns img{
+    width: 100%;
+    height: 100%;;
+}
+#banner .container{
+    height: 260px;
+}
+#banner .wrap{
+    height: 260px;
+    width: 1010px;
+    margin: 0 auto;
+    position: relative;
+}
+#banner .wrap .slide{
+    height: 260px;
+    width: 1010px;
+    position: absolute;
+}
+#banner .wrap .slide-img{
+    width: 1010px;
+    height: 260px;
+    position: absolute;
+    font-size: 0;
+}
+#banner .wrap .slide-img a{
+    display:inline-block;
+    width: 505px;
+}
+#banner .wrap .slide-img a img{
+    display: block;
+    height: 260px;
+    float: left;
+    width: 495px;
+    margin-left: 5px;
+}
+
+#banner .slide-show{
+    z-index: 2;
+}
+#banner .slide-willhide{
+    z-index: 1;
+}
+// 轮播图结束；
+// 内容开始；
+
+// 专题类型显示开始；
+section {
+    width: 100%;
+    min-width: 1210px;
+    .typelist{
+        width: 1030px;
+        margin: 0 auto;
+       
+        ul{
+            height: 184px;
+            margin-left: 15px;
+            margin-top: 30px;
+            li{
+                width: 353px;
+                float: left;
+                a{
+                    display: block;
+                    height: 184px;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+            li:nth-child(1){
+                width: 270px;
+                height: 184px;
+                position: relative;
+                
+                a:first-child{
+                    img{
+                        height: 100%;
+                    }
+                }
+                a:nth-child(2){
+                    display: block;
+                    width: 60px;
+                    height: 12px;
+                    line-height: 12px;
+                    position: absolute;
+                    bottom: 45px;
+                    left: 30px;
+                    color: #000;
+                    &:hover{
+                        color:blue;
+                    }
+                }
+                
+            }
+            li:nth-child(2){
+                margin: 0 15px 0 9px;
+            }
+        }
+        ul:last-child{
+            margin-bottom: 70px;
+        }
+    }
+}
+// 专题类型显示结束；
+
 // 内容结束；
+
+
 
 // 底部开始；
 footer{
     width: 100%;
     height: 601px;
     min-width: 1210px;
-    margin-top: 30px;
     background: url(http://img.5lux.com.cn/vendor/images/v30/footer_message_bg.jpg) center;
     .top{
         width: 1210px;
@@ -433,3 +523,34 @@ footer{
     }
 }
 // 底部结束；
+
+
+#popup{
+    height: 120px;
+    width: 100%;
+    background: url(http://img550.5lux.com.cn/2016/12/27/mn/148282825934_2x120.png) repeat-x center top;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    .popup-box{
+        width: 1210px;
+        height: 120px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -605px;
+        z-index: 2;
+        a{
+            display: block;
+            width: 70px;
+            height: 47px;
+            position: absolute;
+            z-index: 3;
+            right: 0;
+            top: 0;
+
+            
+        }
+    }
+}
