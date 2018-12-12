@@ -27,20 +27,19 @@ section{
         }
     }
     .container-goods{
+        
         padding: 20px 50px;
         .goods-list{
             float: left;
             width: 235px;
-            height: 405px;
             background: #fff;
             margin: 0 5px 15px;
             .good-image{
-                width: 235px;
-                height: 257px;
-                padding-bottom: 22px;
+                width: 215px;
+                height: 332px;
+                padding: 10px;
                 img{
-                    width: 100%;
-                    height: 100%;
+                    width:100%;
                 }
             }
             .good-title{
@@ -48,26 +47,17 @@ section{
                 font-weight: bold;
                 color: #000;
                 text-align: left;
-                padding: 0 10px 8px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-            }
-            .good-describe{
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 2;
-                -webkit-box-orient: vertical;
-                word-break: break-all;
-                line-height: 18px;
-                font-size: 12px;
-                color: #000;
-                text-align: left;
-                padding: 0 10px;
-                margin-bottom: 10px;
-                height: 35px;
+                margin-left: 10px;
+                p{
+                    width: 215px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
             }
             .good-detail{
+                padding-bottom: 10px;
+                padding-top: 10px;
                 span{
                     display: block;
                     float: left;
@@ -88,7 +78,21 @@ section{
                     color: #999;
                     font-size: 14px;
                 }
+                button{
+                    width: 80px;
+                    height: 24px;
+                    text-align: center;
+                    border: none;
+                    background: none;
+                    outline: none;
+                    float: right;
+                    margin-right: 10px;
+                    color: #ff3333;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
             }
+            
         }
     }
 }

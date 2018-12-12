@@ -118,12 +118,245 @@ html,body{
 // 头部开始；
 
 header{
-    background: #ddd;
+    min-width: 1210px;
     .top{
+        position: relative;
         height: 30px;
+        background:#f2f2f2;
+        .container-top{
+            height: 30px;
+            width: 1210px;
+            margin: 0 auto;
+            a{
+                display: block;
+                color: #757272;
+                margin-top: 10px;
+                height: 12px;
+                line-height: 12px;
+                &:hover{
+                    color: #C69C6D;
+                }
+            }
+            ul:nth-child(1){
+                float: left;
+                li{
+                    float: left;
+                    height: 30px;
+                    
+                }
+                li:nth-child(1){
+                    width: 110px;
+                    b{
+                        float: left;
+                        margin: 6px;
+                        display: inline-block;
+                        width: 16px;
+                        height: 14px;
+                        background: url(http://www.5lux.com/vendor/images/v30/home.png) no-repeat center;
+                    }
+                    a{
+                        border-right: 1px solid #DBDBDB;
+                    }
+                }
+                li:nth-child(2){
+                    width: 163px;
+                    margin-left: 10px;
+                    b{
+                        float: left;
+                        width: 25px;
+                        height: 30px;
+                        display: inline-block;
+                        background: url(../images/brandstore_share.png) no-repeat -348px -338px;
+                    }
+                }
+            }
+            ul:nth-child(2){
+                height: 30px;
+                float: right;
+                li{
+                    float: left;
+                    a{
+                        border-right: 1px solid #DBDBDB;
+                    }
+                }
+                li:nth-child(1){
+                    a{
+                        width: 80px;
+                        text-align: right;
+                        padding-right: 20px;
+                    }
+                }
+                li:nth-child(2){
+                    width: 88px;
+                    span{
+                        width: 22px;
+                        height: 24px;
+                        float: left;
+                        background: url(http://img.5lux.com.cn/vendor/images/5lux/youli.gif) no-repeat;
+                        margin: 0 5px 0 17px;
+                    }
+                   
+                }
+                li:nth-child(3){
+                    position: relative;
+                    width: 130px;
+                    height: 30px;
+                    background: url(../images/brandstore_share.png) no-repeat -253px -436px;
+                    a{
+                        padding-left: 15px;
+                        &:hover{
+                            color: #d00000;
+                        }
+                    }
+                    &:hover{
+                        background:#fff url(../images/brandstore_share.png) no-repeat -253px -464px;
+                    }
+                    .ejcd{
+                        position: absolute;
+                        width: 128px;
+                        background: #fff;
+                        top: 30px;
+                        border: 1px solid #ddd;
+                        border-top: none;
+                        display: none;
+                        padding-bottom: 10px;
+                        z-index: 2;
+                        i{
+                            cursor: pointer;
+                            width: 130px;
+                            float: left;
+                            display: block;
+                            color: #757272;
+                            margin-top: 10px;
+                            height: 14px;
+                            line-height: 14px;
+                            margin-left: 36px;
+                            &:hover{
+                                color: #CF0101;
+                            }
+                        }
+                    }
+                    
+                }
+                li:nth-child(4){
+                    width: 85px;
+                    text-align: center;
+                }
+                li:nth-child(5){
+                    margin-left: 10px;
+                    width: 128px;
+                    padding-left: 5px;
+                    height: 30px;
+                    background: url(../images/brandstore_share.png) no-repeat -218px -369px;
+                    a{
+                        border-right: none;
+                        &:hover{
+                            color: #d00000;
+                        }
+                    }
+                    &:hover{
+                        background: #fff url(../images/brandstore_share.png) no-repeat -218px -404px;
+                    }
+                    .ejcd1{
+                        position: absolute;
+                        width: 112px;
+                        height: 110px;
+                        padding: 10px;
+                        right: 69px;
+                        border: 1px solid #ddd;
+                        border-top: none;
+                        background: #fff;
+                        display: none;
+                        z-index: 1;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        
+       
     }
     .middle{
         height: 110px;
+        width: 1210px;
+        margin: auto;
+        
+        .middle-left{
+            float: left;
+            img{
+                display: block;
+                float: left;
+            }
+            img:nth-child(2){
+                margin-left: 50px;
+                margin-top: 20px;
+            }
+        }
+        .middle-center{
+            float: left;
+            margin-left: 20px;
+            width: 347px;
+            padding-top: 40px;
+            height: 68px;
+            form{
+                width: 343px;
+                padding: 2px 2px;
+                background: #c69c6d;
+                height: 34px;
+                input:nth-child(1){
+                    outline: none;
+                    width: 260px;
+                    height: 34px;
+                    line-height: 34px;
+                    vertical-align: middle;
+                    border: none;
+                    background: #fff;
+                    padding-left: 3px;
+                    float: left;
+                }
+                input:nth-child(2){
+                    width: 80px;
+                    height: 34px;
+                    border: none;
+                    float: left;
+                    color: #fff;
+                    font-size: 15px;
+                    background: none;
+                }
+            }
+        }
+        .middle-right{
+            float: left;
+            padding-top: 40px;
+            margin-left: 60px;
+            span{
+                display: inline-block;
+                width: 200px;
+                height: 30px;
+                background: url(http://img.5lux.com.cn/vendor/images/v30/overseadef.jpg) no-repeat;
+                background-size: 100% 100%;
+            }
+            p{
+                position: relative;
+                margin-left: 10px;
+                width: 94px;
+                height: 32px;
+                line-height: 32px;
+                text-indent: 45px;
+                border: 1px solid #ccc;
+                box-shadow: 0 0 2px rgba(0,0,0,.2);
+                float: right;
+                color: #666;
+                background: url(../images/brandstore_share.png) no-repeat -376px -405px;
+                img{
+                    position: absolute;
+                    left: 10px;
+                    top: 2px;
+                }
+            }
+        }
     }
     nav{
         height: 38px;
@@ -151,6 +384,8 @@ header{
                         font-size: 14px;
                         color: #fff;
                         font-family: "微软雅黑";
+                        cursor: pointer;
+
                     }
                     i{
                         float: left;

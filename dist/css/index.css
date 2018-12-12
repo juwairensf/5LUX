@@ -17,14 +17,312 @@ html, body {
       display: block; }
 
 /* 头部广告结束 */
+#right-menu {
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  right: 0;
+  width: 37px;
+  height: 100%; }
+  #right-menu li {
+    width: 35px;
+    height: 35px;
+    background: url(../images/share02.png);
+    background-color: #333;
+    margin-bottom: 1px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; }
+    #right-menu li:hover {
+      background-color: #C69C6D; }
+  #right-menu .menu-first {
+    position: absolute;
+    z-index: 2;
+    top: 30%;
+    left: 0px;
+    width: 35px;
+    height: 234px; }
+    #right-menu .menu-first ul li:nth-child(1) {
+      background-position: -88px -156px; }
+      #right-menu .menu-first ul li:nth-child(1):hover {
+        background-position: -88px -121px; }
+    #right-menu .menu-first ul li:nth-child(2) {
+      background-position: -140px -154px; }
+      #right-menu .menu-first ul li:nth-child(2):hover {
+        background-position: -141px -124px; }
+    #right-menu .menu-first ul li:nth-child(3) {
+      background-position: -202px -155px; }
+      #right-menu .menu-first ul li:nth-child(3):hover {
+        background-position: -203px -126px; }
+    #right-menu .menu-first ul li:nth-child(4) {
+      background-position: -258px -125px; }
+  #right-menu .menu-second {
+    position: absolute;
+    z-index: 2;
+    bottom: 35px;
+    left: 0px;
+    width: 35px;
+    height: 140px; }
+    #right-menu .menu-second ul li:nth-child(1) {
+      background-position: -312px -155px; }
+      #right-menu .menu-second ul li:nth-child(1):hover {
+        background-position: -312px -124px; }
+    #right-menu .menu-second ul li:nth-child(2) {
+      background-position: -374px -157px; }
+      #right-menu .menu-second ul li:nth-child(2):hover {
+        background-position: -375px -125px; }
+    #right-menu .menu-second ul li:nth-child(3) {
+      background: url(../images/line_bg.png) no-repeat 10px 9px;
+      background-color: #333;
+      margin-bottom: 1px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px; }
+      #right-menu .menu-second ul li:nth-child(3):hover {
+        background: url(../images/line_bg.png) no-repeat 10px -19px;
+        background-color: #C69C6D; }
+    #right-menu .menu-second ul li:nth-child(4) {
+      background-position: -437px -153px; }
+      #right-menu .menu-second ul li:nth-child(4):hover {
+        background-position: -436px -124px; }
+
 header {
-  background: #ddd; }
+  min-width: 1210px; }
   header .top {
-    height: 30px; }
+    position: relative;
+    height: 30px;
+    background: #f2f2f2; }
+    header .top .container-top {
+      height: 30px;
+      width: 1210px;
+      margin: 0 auto; }
+      header .top .container-top a {
+        display: block;
+        color: #757272;
+        margin-top: 10px;
+        height: 12px;
+        line-height: 12px; }
+        header .top .container-top a:hover {
+          color: #C69C6D; }
+      header .top .container-top ul:nth-child(1) {
+        float: left; }
+        header .top .container-top ul:nth-child(1) li {
+          float: left;
+          height: 30px; }
+        header .top .container-top ul:nth-child(1) li:nth-child(1) {
+          width: 110px; }
+          header .top .container-top ul:nth-child(1) li:nth-child(1) b {
+            float: left;
+            margin: 6px;
+            display: inline-block;
+            width: 16px;
+            height: 14px;
+            background: url(http://www.5lux.com/vendor/images/v30/home.png) no-repeat center; }
+          header .top .container-top ul:nth-child(1) li:nth-child(1) a {
+            border-right: 1px solid #DBDBDB; }
+        header .top .container-top ul:nth-child(1) li:nth-child(2) {
+          width: 163px;
+          margin-left: 10px; }
+          header .top .container-top ul:nth-child(1) li:nth-child(2) b {
+            float: left;
+            width: 25px;
+            height: 30px;
+            display: inline-block;
+            background: url(../images/brandstore_share.png) no-repeat -348px -338px; }
+      header .top .container-top ul:nth-child(2) {
+        height: 30px;
+        float: right; }
+        header .top .container-top ul:nth-child(2) li {
+          float: left; }
+          header .top .container-top ul:nth-child(2) li a {
+            border-right: 1px solid #DBDBDB; }
+        header .top .container-top ul:nth-child(2) li:nth-child(1) a {
+          width: 80px;
+          text-align: right;
+          padding-right: 20px; }
+        header .top .container-top ul:nth-child(2) li:nth-child(2) {
+          width: 88px; }
+          header .top .container-top ul:nth-child(2) li:nth-child(2) span {
+            width: 22px;
+            height: 24px;
+            float: left;
+            background: url(http://img.5lux.com.cn/vendor/images/5lux/youli.gif) no-repeat;
+            margin: 0 5px 0 17px; }
+        header .top .container-top ul:nth-child(2) li:nth-child(3) {
+          position: relative;
+          width: 130px;
+          height: 30px;
+          background: url(../images/brandstore_share.png) no-repeat -253px -436px; }
+          header .top .container-top ul:nth-child(2) li:nth-child(3) a {
+            padding-left: 15px; }
+            header .top .container-top ul:nth-child(2) li:nth-child(3) a:hover {
+              color: #d00000; }
+          header .top .container-top ul:nth-child(2) li:nth-child(3):hover {
+            background: #fff url(../images/brandstore_share.png) no-repeat -253px -464px; }
+          header .top .container-top ul:nth-child(2) li:nth-child(3) .ejcd {
+            position: absolute;
+            width: 128px;
+            background: #fff;
+            top: 30px;
+            border: 1px solid #ddd;
+            border-top: none;
+            display: none;
+            padding-bottom: 10px;
+            z-index: 2; }
+            header .top .container-top ul:nth-child(2) li:nth-child(3) .ejcd i {
+              cursor: pointer;
+              width: 130px;
+              float: left;
+              display: block;
+              color: #757272;
+              margin-top: 10px;
+              height: 14px;
+              line-height: 14px;
+              margin-left: 36px; }
+              header .top .container-top ul:nth-child(2) li:nth-child(3) .ejcd i:hover {
+                color: #CF0101; }
+        header .top .container-top ul:nth-child(2) li:nth-child(4) {
+          width: 85px;
+          text-align: center; }
+        header .top .container-top ul:nth-child(2) li:nth-child(5) {
+          margin-left: 10px;
+          width: 128px;
+          padding-left: 5px;
+          height: 30px;
+          background: url(../images/brandstore_share.png) no-repeat -218px -369px; }
+          header .top .container-top ul:nth-child(2) li:nth-child(5) a {
+            border-right: none; }
+            header .top .container-top ul:nth-child(2) li:nth-child(5) a:hover {
+              color: #d00000; }
+          header .top .container-top ul:nth-child(2) li:nth-child(5):hover {
+            background: #fff url(../images/brandstore_share.png) no-repeat -218px -404px; }
+          header .top .container-top ul:nth-child(2) li:nth-child(5) .ejcd1 {
+            position: absolute;
+            width: 112px;
+            height: 110px;
+            padding: 10px;
+            right: 69px;
+            border: 1px solid #ddd;
+            border-top: none;
+            background: #fff;
+            display: none;
+            z-index: 1; }
+            header .top .container-top ul:nth-child(2) li:nth-child(5) .ejcd1 img {
+              width: 100%; }
   header .middle {
-    height: 110px; }
+    height: 110px;
+    width: 1210px;
+    margin: auto; }
+    header .middle .middle-left {
+      float: left; }
+      header .middle .middle-left img {
+        display: block;
+        float: left; }
+      header .middle .middle-left img:nth-child(2) {
+        margin-left: 50px;
+        margin-top: 20px; }
+    header .middle .middle-center {
+      float: left;
+      margin-left: 20px;
+      width: 347px;
+      padding-top: 40px;
+      height: 68px; }
+      header .middle .middle-center form {
+        width: 343px;
+        padding: 2px 2px;
+        background: #c69c6d;
+        height: 34px; }
+        header .middle .middle-center form input:nth-child(1) {
+          outline: none;
+          width: 260px;
+          height: 34px;
+          line-height: 34px;
+          vertical-align: middle;
+          border: none;
+          background: #fff;
+          padding-left: 3px;
+          float: left; }
+        header .middle .middle-center form input:nth-child(2) {
+          width: 80px;
+          height: 34px;
+          border: none;
+          float: left;
+          color: #fff;
+          font-size: 15px;
+          background: none; }
+    header .middle .middle-right {
+      float: left;
+      padding-top: 40px;
+      margin-left: 60px; }
+      header .middle .middle-right span {
+        display: inline-block;
+        width: 200px;
+        height: 30px;
+        background: url(http://img.5lux.com.cn/vendor/images/v30/overseadef.jpg) no-repeat;
+        background-size: 100% 100%; }
+      header .middle .middle-right p {
+        position: relative;
+        margin-left: 10px;
+        width: 94px;
+        height: 32px;
+        line-height: 32px;
+        text-indent: 45px;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+        float: right;
+        color: #666;
+        background: url(../images/brandstore_share.png) no-repeat -376px -405px; }
+        header .middle .middle-right p img {
+          position: absolute;
+          left: 10px;
+          top: 2px; }
   header nav {
-    height: 38px; }
+    height: 38px;
+    background: #000; }
+    header nav .nav-con {
+      width: 1210px;
+      margin: 0 auto; }
+      header nav .nav-con ul li {
+        float: left;
+        text-align: center;
+        height: 38px;
+        line-height: 38px;
+        width: 82px; }
+        header nav .nav-con ul li a {
+          color: #c8a985;
+          font-size: 14px;
+          font-family: "微软雅黑"; }
+          header nav .nav-con ul li a:hover {
+            color: #fff; }
+        header nav .nav-con ul li span {
+          font-size: 14px;
+          color: #fff;
+          font-family: "微软雅黑";
+          cursor: pointer; }
+        header nav .nav-con ul li i {
+          float: left;
+          width: 19px;
+          height: 40px;
+          line-height: 40px;
+          background: url(../images/share02.png) no-repeat -58px -169px;
+          margin-left: 23px; }
+      header nav .nav-con ul li:nth-child(1) {
+        width: 130px;
+        background: #CF0101; }
+      header nav .nav-con ul li:nth-child(9) {
+        float: right;
+        margin-right: 10px;
+        width: 130px; }
+        header nav .nav-con ul li:nth-child(9) strong {
+          display: block;
+          float: left;
+          width: 30px;
+          height: 40px;
+          margin-right: 13px; }
+        header nav .nav-con ul li:nth-child(9) strong:nth-child(1) {
+          background: url(../images/share02.png) no-repeat -237px -66px; }
+        header nav .nav-con ul li:nth-child(9) strong:nth-child(2) {
+          background: url(../images/share02.png) no-repeat -296px -66px; }
+        header nav .nav-con ul li:nth-child(9) strong:nth-child(3) {
+          background: url(../images/share02.png) no-repeat -354px -66px; }
 
 #banner {
   height: 520px;
@@ -99,6 +397,181 @@ header {
 
 #banner .pages span.active {
   background: #D00000; }
+
+section {
+  min-width: 1210px;
+  margin-bottom: 50px; }
+  section .brandship {
+    width: 1210px;
+    margin: 0 auto; }
+    section .brandship .brandship-title {
+      margin: 40px 0 28px; }
+      section .brandship .brandship-title img {
+        display: block; }
+  section ul li {
+    float: left;
+    width: 234px;
+    height: 329px;
+    margin-right: 10px; }
+    section ul li a img {
+      display: block; }
+  section ul li:nth-child(5) {
+    margin-right: 0; }
+  section .hotstore_title a {
+    display: block; }
+    section .hotstore_title a img {
+      display: block; }
+  section .hotflag {
+    width: 1210px;
+    height: 184px; }
+    section .hotflag ul {
+      width: 1210px;
+      height: 184px; }
+      section .hotflag ul li {
+        width: 1210px;
+        height: 184px; }
+        section .hotflag ul li div {
+          position: relative;
+          float: left;
+          width: 106.8px;
+          height: 55px;
+          padding: 14px 29px;
+          border: 1px solid #dfdfdf;
+          margin-right: 6px;
+          margin-bottom: 7px; }
+          section .hotflag ul li div img {
+            width: 100%;
+            height: 54px;
+            display: block; }
+  section .oversealife {
+    width: 1210px;
+    margin: 0 auto; }
+    section .oversealife .oversealife_title img {
+      display: block; }
+    section .oversealife .oversealife-list li {
+      float: left;
+      width: 295px;
+      height: 393px;
+      margin-right: 10px; }
+      section .oversealife .oversealife-list li img {
+        display: block; }
+      section .oversealife .oversealife-list li i {
+        position: absolute;
+        left: -402px;
+        top: 0;
+        width: 313px;
+        height: 393px; }
+    section .oversealife .oversealife-list li:nth-child(4) {
+      margin-right: 0; }
+  section .shopping {
+    width: 1210px;
+    margin: 0 auto; }
+    section .shopping .shopping-title img {
+      display: block; }
+    section .shopping .shopping-center {
+      width: 100%;
+      overflow: hidden; }
+      section .shopping .shopping-center li {
+        float: left;
+        width: 234px;
+        height: 50px;
+        overflow: hidden;
+        position: relative;
+        margin-right: 8px; }
+        section .shopping .shopping-center li div {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 234px;
+          height: 100px; }
+          section .shopping .shopping-center li div a:nth-child(1) {
+            display: block;
+            width: 234px;
+            height: 50px;
+            line-height: 50px;
+            background: #999;
+            text-align: center;
+            font-size: 14px;
+            color: #fff; }
+    section .shopping .goodstitle {
+      width: 1210px;
+      margin: 0 auto; }
+      section .shopping .goodstitle img {
+        display: block;
+        float: left; }
+      section .shopping .goodstitle .right {
+        float: right;
+        overflow: hidden;
+        height: 60px;
+        line-height: 60px;
+        width: 128; }
+        section .shopping .goodstitle .right span:nth-child(1) {
+          display: block;
+          float: right;
+          background: url(../images/share02.png) no-repeat -470px -360px;
+          width: 18px;
+          height: 60px;
+          margin-left: 6px; }
+        section .shopping .goodstitle .right span:nth-child(2) {
+          display: block;
+          float: right;
+          font-size: 16px; }
+    section .shopping .goods .goods1 {
+      float: left;
+      width: 220px;
+      height: 366px;
+      border: 1px solid #ccc;
+      padding: 0 9px;
+      padding-top: 4px;
+      margin-right: 8px; }
+    section .shopping .goods .goods2 {
+      float: left;
+      width: 390px;
+      height: 370px;
+      border: 1px solid #ccc;
+      overflow: hidden;
+      margin-right: 8px; }
+    section .shopping .goods .goods3 {
+      overflow: hidden;
+      height: 372px; }
+      section .shopping .goods .goods3 .goods3-pic {
+        float: left;
+        width: 276px;
+        height: 189px;
+        margin-right: 7px; }
+        section .shopping .goods .goods3 .goods3-pic a img {
+          display: block;
+          border: 1px solid #ccc; }
+      section .shopping .goods .goods3 .goods3-pic:nth-child(even) {
+        margin-right: 0; }
+  section .promotion {
+    width: 1210px;
+    margin: 0 auto; }
+    section .promotion .title img {
+      display: block; }
+    section .promotion .promotion-container .promotion {
+      margin-bottom: 10px; }
+      section .promotion .promotion-container .promotion div {
+        float: left; }
+        section .promotion .promotion-container .promotion div img {
+          display: block; }
+      section .promotion .promotion-container .promotion .img2 {
+        margin: 0 12px; }
+    section .promotion .promotion-container .promotion-3 .left {
+      float: left;
+      width: 610px;
+      height: 146px; }
+      section .promotion .promotion-container .promotion-3 .left a {
+        display: block;
+        width: 203px;
+        height: 73px;
+        float: left; }
+        section .promotion .promotion-container .promotion-3 .left a img {
+          display: block; }
+    section .promotion .promotion-container .promotion-3 .right {
+      float: left; }
+      section .promotion .promotion-container .promotion-3 .right a {
+        float: left; }
 
 footer {
   width: 100%;

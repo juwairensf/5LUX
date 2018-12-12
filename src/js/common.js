@@ -4,44 +4,35 @@ $(function(){
             display:"none"
         })
     })
+
+
+
+    // 二级菜单；
+    $("#menu").on("mouseenter",function(){
+        $(".ejcd").css({
+            display:"block"
+        })
+    })
+    $("#menu").on("mouseleave",function(){
+        $(".ejcd").css({
+            display:"none"
+        })
+    })
+
+    $("#menu1").on("mouseenter",function(){
+        $(".ejcd1").css({
+            display:"block"
+        })
+    })
+    $("#menu1").on("mouseleave",function(){
+        $(".ejcd1").css({
+            display:"none"
+        })
+    })
+
+
+
+    
 })
 
 
-
-
-// 选择器的封装
-
-function _(selector){
-    var ele=document.querySelectorAll(selector);
-    if(ele.length===0) return null;
-    return ele.length===1 ? ele[0] : ele;
-}
-
-function _jsonp(url,cb){
-    return new Promise(function(resolve,reject){
-        cb=cb ? cb : "callback";
-        var script=document.createElement("script");
-        var randomName="h"+Date.now();
-        url += (/\?/.test(url) ? "&" : "?")+`${cb}=${randomName}`;
-        script.src=url;
-        document.body.appendChild(script);
-
-        window[randomName]=function(res){
-            resolve(res)
-        }
-
-        script.onload=function(){
-            this.remove();
-        }
-    })
-}
-
-// 兼容型伪数组转真数组；
-function _slice(args){
-    return Array.prototype.slice.call(args)
-}
-
-//移除class的类名；
-function _removeClass(dom,className){
-    return dom.className=dom.className.replace(className,"");
-}

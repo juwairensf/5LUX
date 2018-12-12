@@ -19,19 +19,407 @@ html,body{
     }
 }
 /* 头部广告结束 */
- 
+// 右边菜单开始；
+#right-menu{
+    position: fixed;
+    z-index: 90;
+    top: 0;
+    right: 0;
+    width: 37px;
+    height: 100%;
+    
+    li{
+        width: 35px;
+        height: 35px;
+        background: url(../images/share02.png);
+        background-color: #333;
+        margin-bottom: 1px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        &:hover{
+            background-color: #C69C6D;
+        }
+    }
+    .menu-first{
+        position: absolute;
+        z-index: 2;
+        top: 30%;
+        left: 0px;
+        width: 35px;
+        height: 234px;
+        ul{
+            li:nth-child(1){
+                background-position: -88px -156px;
+                &:hover{
+                    background-position: -88px -121px;
+                }
+            }
+            li:nth-child(2){
+                background-position: -140px -154px;
+                &:hover{
+                    background-position: -141px -124px;
+                }
+            }
+            li:nth-child(3){
+                background-position: -202px -155px;
+                &:hover{
+                    background-position: -203px -126px;
+                }
+            }
+            li:nth-child(4){
+                background-position: -258px -125px;
+                
+            }
+        }
+    }
+    .menu-second{
+        position: absolute;
+        z-index: 2;
+        bottom: 35px;
+        left: 0px;
+        width: 35px;
+        height: 140px;
+        ul{
+            li:nth-child(1){
+                background-position: -312px -155px;
+                &:hover{
+                    background-position: -312px -124px;
+                }
+            }
+            li:nth-child(2){
+                background-position: -374px -157px;
+                &:hover{
+                    background-position: -375px -125px;
+                }
+            }
+            li:nth-child(3){
+                background: url(../images/line_bg.png) no-repeat 10px 9px;
+                background-color: #333;
+                margin-bottom: 1px;
+                border-top-left-radius: 5px;
+                border-bottom-left-radius: 5px;
+                &:hover{
+                    background: url(../images/line_bg.png) no-repeat 10px -19px;
+                    background-color: #C69C6D;
+                }
+            }
+            li:nth-child(4){
+                background-position: -437px -153px;
+                &:hover{
+                    background-position: -436px -124px;
+                }
+            }
+        }
+    }
+}
+// 右边菜单结束； 
 // 头部开始；
 
 header{
-    background: #ddd;
+    min-width: 1210px;
     .top{
+        position: relative;
         height: 30px;
+        background:#f2f2f2;
+        .container-top{
+            height: 30px;
+            width: 1210px;
+            margin: 0 auto;
+            a{
+                display: block;
+                color: #757272;
+                margin-top: 10px;
+                height: 12px;
+                line-height: 12px;
+                &:hover{
+                    color: #C69C6D;
+                }
+            }
+            ul:nth-child(1){
+                float: left;
+                li{
+                    float: left;
+                    height: 30px;
+                    
+                }
+                li:nth-child(1){
+                    width: 110px;
+                    b{
+                        float: left;
+                        margin: 6px;
+                        display: inline-block;
+                        width: 16px;
+                        height: 14px;
+                        background: url(http://www.5lux.com/vendor/images/v30/home.png) no-repeat center;
+                    }
+                    a{
+                        border-right: 1px solid #DBDBDB;
+                    }
+                }
+                li:nth-child(2){
+                    width: 163px;
+                    margin-left: 10px;
+                    b{
+                        float: left;
+                        width: 25px;
+                        height: 30px;
+                        display: inline-block;
+                        background: url(../images/brandstore_share.png) no-repeat -348px -338px;
+                    }
+                }
+            }
+            ul:nth-child(2){
+                height: 30px;
+                float: right;
+                li{
+                    float: left;
+                    a{
+                        border-right: 1px solid #DBDBDB;
+                    }
+                }
+                li:nth-child(1){
+                    a{
+                        width: 80px;
+                        text-align: right;
+                        padding-right: 20px;
+                    }
+                }
+                li:nth-child(2){
+                    width: 88px;
+                    span{
+                        width: 22px;
+                        height: 24px;
+                        float: left;
+                        background: url(http://img.5lux.com.cn/vendor/images/5lux/youli.gif) no-repeat;
+                        margin: 0 5px 0 17px;
+                    }
+                   
+                }
+                li:nth-child(3){
+                    position: relative;
+                    width: 130px;
+                    height: 30px;
+                    background: url(../images/brandstore_share.png) no-repeat -253px -436px;
+                    a{
+                        padding-left: 15px;
+                        &:hover{
+                            color: #d00000;
+                        }
+                    }
+                    &:hover{
+                        background:#fff url(../images/brandstore_share.png) no-repeat -253px -464px;
+                    }
+                    .ejcd{
+                        position: absolute;
+                        width: 128px;
+                        background: #fff;
+                        top: 30px;
+                        border: 1px solid #ddd;
+                        border-top: none;
+                        display: none;
+                        padding-bottom: 10px;
+                        z-index: 2;
+                        i{
+                            cursor: pointer;
+                            width: 130px;
+                            float: left;
+                            display: block;
+                            color: #757272;
+                            margin-top: 10px;
+                            height: 14px;
+                            line-height: 14px;
+                            margin-left: 36px;
+                            &:hover{
+                                color: #CF0101;
+                            }
+                        }
+                    }
+                    
+                }
+                li:nth-child(4){
+                    width: 85px;
+                    text-align: center;
+                }
+                li:nth-child(5){
+                    margin-left: 10px;
+                    width: 128px;
+                    padding-left: 5px;
+                    height: 30px;
+                    background: url(../images/brandstore_share.png) no-repeat -218px -369px;
+                    a{
+                        border-right: none;
+                        &:hover{
+                            color: #d00000;
+                        }
+                    }
+                    &:hover{
+                        background: #fff url(../images/brandstore_share.png) no-repeat -218px -404px;
+                    }
+                    .ejcd1{
+                        position: absolute;
+                        width: 112px;
+                        height: 110px;
+                        padding: 10px;
+                        right: 69px;
+                        border: 1px solid #ddd;
+                        border-top: none;
+                        background: #fff;
+                        display: none;
+                        z-index: 1;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        
+       
     }
     .middle{
         height: 110px;
+        width: 1210px;
+        margin: auto;
+        
+        .middle-left{
+            float: left;
+            img{
+                display: block;
+                float: left;
+            }
+            img:nth-child(2){
+                margin-left: 50px;
+                margin-top: 20px;
+            }
+        }
+        .middle-center{
+            float: left;
+            margin-left: 20px;
+            width: 347px;
+            padding-top: 40px;
+            height: 68px;
+            form{
+                width: 343px;
+                padding: 2px 2px;
+                background: #c69c6d;
+                height: 34px;
+                input:nth-child(1){
+                    outline: none;
+                    width: 260px;
+                    height: 34px;
+                    line-height: 34px;
+                    vertical-align: middle;
+                    border: none;
+                    background: #fff;
+                    padding-left: 3px;
+                    float: left;
+                }
+                input:nth-child(2){
+                    width: 80px;
+                    height: 34px;
+                    border: none;
+                    float: left;
+                    color: #fff;
+                    font-size: 15px;
+                    background: none;
+                }
+            }
+        }
+        .middle-right{
+            float: left;
+            padding-top: 40px;
+            margin-left: 60px;
+            span{
+                display: inline-block;
+                width: 200px;
+                height: 30px;
+                background: url(http://img.5lux.com.cn/vendor/images/v30/overseadef.jpg) no-repeat;
+                background-size: 100% 100%;
+            }
+            p{
+                position: relative;
+                margin-left: 10px;
+                width: 94px;
+                height: 32px;
+                line-height: 32px;
+                text-indent: 45px;
+                border: 1px solid #ccc;
+                box-shadow: 0 0 2px rgba(0,0,0,.2);
+                float: right;
+                color: #666;
+                background: url(../images/brandstore_share.png) no-repeat -376px -405px;
+                img{
+                    position: absolute;
+                    left: 10px;
+                    top: 2px;
+                }
+            }
+        }
     }
     nav{
         height: 38px;
+        background: #000;
+        .nav-con{
+            width: 1210px;
+            margin: 0 auto;
+            ul{
+                li{
+                    float: left;
+                    text-align: center;
+                    height: 38px;
+                    line-height: 38px;
+                    width: 82px;
+                    a{
+                        color:#c8a985;
+                        font-size: 14px;
+                        font-family: "微软雅黑";
+                       
+                        &:hover{
+                            color: #fff;
+                        }
+                    }
+                    span{
+                        font-size: 14px;
+                        color: #fff;
+                        font-family: "微软雅黑";
+                        cursor: pointer;
+                    }
+                    i{
+                        float: left;
+                        width: 19px;
+                        height: 40px;
+                        line-height: 40px;
+                        background: url(../images/share02.png) no-repeat -58px -169px;
+                        margin-left: 23px;
+                    }
+                }
+                li:nth-child(1){
+                    width: 130px;
+                    background: #CF0101;
+                }
+                li:nth-child(9){
+                    float:right;
+                    margin-right: 10px;
+                    width: 130px;
+                    strong{
+                        display: block;
+                        float: left;
+                        width: 30px;
+                        height: 40px;
+                        margin-right: 13px;
+                    }
+                    strong:nth-child(1){
+                        background: url(../images/share02.png) no-repeat -237px -66px;
+                    }
+                    strong:nth-child(2){
+                        background: url(../images/share02.png) no-repeat -296px -66px;
+                    }
+                    strong:nth-child(3){
+                        background: url(../images/share02.png) no-repeat -354px -66px;
+                    }
+                }
+            }
+        }
     }
 }
 // 头部结束；
@@ -113,10 +501,270 @@ header{
 #banner .pages span.active{
     background: #D00000;
 }
-
 // 轮播图结束；
 
+section{
+    min-width: 1210px;
+    margin-bottom: 50px;
+    // 品牌旗舰开始；
+    .brandship{
+        width: 1210px;
+        margin: 0 auto;
+        .brandship-title{
+            margin: 40px 0 28px;
 
+            img{
+                display: block;
+            }
+        }
+    }
+    ul{
+        li{
+            float: left;
+            width: 234px;
+            height: 329px;;
+            margin-right: 10px;
+            a{
+                img{
+                    display: block;
+                }
+            }
+        }
+        li:nth-child(5){
+            margin-right:0;
+        }
+    }
+    .hotstore_title{
+        a{
+            display: block;
+            img{
+                display: block;
+            }
+        }
+    }
+    .hotflag{
+        width: 1210px;
+        height: 184px;
+        ul{
+            width: 1210px;
+            height: 184px;
+            li{
+                width: 1210px;
+                height: 184px;
+                div{
+                    position: relative;
+                    float: left;
+                    width: 106.8px;
+                    height: 55px;
+                    padding: 14px 29px;
+                    border: 1px solid #dfdfdf;
+                    margin-right: 6px;
+                    margin-bottom: 7px;
+                    img{
+                        width: 100%;
+                        height: 54px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    // 品牌旗舰结束；
+    // 海外服务开始
+    .oversealife{
+        width: 1210px;
+        margin: 0 auto;
+        .oversealife_title{
+            
+            img{
+                display: block;
+            }
+        }
+        .oversealife-list{
+            li{
+                float: left;
+                width: 295px;
+                height: 393px;
+                margin-right: 10px;
+                img{
+
+                    display: block;
+                }
+                i{
+                    position: absolute;
+                    left: -402px;
+                    top: 0;
+                    width: 313px;
+                    height: 393px;
+                }
+            }
+            li:nth-child(4){
+                margin-right: 0;
+            }
+        }
+    }
+    // 海外服务开始
+
+    // 购物中心开始
+    .shopping{
+        width: 1210px;
+        margin: 0 auto;
+        .shopping-title{
+            img{
+                display: block;
+            }
+        }
+        .shopping-center{
+            width: 100%;
+            overflow: hidden;
+            li{
+                float: left;
+                width: 234px;
+                height: 50px;
+                overflow: hidden;
+                position: relative;
+                margin-right: 8px;
+                div{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 234px;
+                    height: 100px;
+                    a:nth-child(1){
+                        display: block;
+                        width: 234px;
+                        height: 50px;
+                        line-height: 50px;
+                        background: #999;
+                        text-align: center;
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        //经典包款开始
+        .goodstitle{
+            width: 1210px;
+            margin: 0 auto;
+            img{
+                display: block;
+                float: left;
+            }
+            .right{
+                float: right;
+                overflow: hidden;
+                height: 60px;
+                line-height: 60px;
+                width: 128;
+                span:nth-child(1){
+                    display: block;
+                    float: right;
+                    background: url(../images/share02.png) no-repeat -470px -360px;
+                    width: 18px;
+                    height: 60px;
+                    margin-left: 6px;
+                }
+                span:nth-child(2){
+                    display: block;
+                    float: right;
+                    font-size: 16px;
+                }
+            }
+        }
+        .goods{
+            .goods1{
+                float: left;
+                width: 220px;
+                height: 366px;
+                border: 1px solid #ccc;
+                padding: 0 9px;
+                padding-top: 4px;
+                margin-right: 8px;
+            }
+            .goods2{
+                float: left;
+                width: 390px;
+                height: 370px;
+                border: 1px solid #ccc;
+                overflow: hidden;
+                margin-right: 8px;
+            }
+            .goods3{
+                overflow: hidden;
+                height: 372px;
+                .goods3-pic{
+                    float: left;
+                    width: 276px;
+                    height: 189px;
+                    margin-right: 7px;
+                    a{
+                        img{
+                            display: block;
+                            border: 1px solid #ccc;
+                        }
+                        
+                    }
+                }
+                .goods3-pic:nth-child(even){
+                    margin-right: 0;
+                }
+            }
+        }
+        //经典包款结束  
+    }
+    // 购物中心结束
+
+    // 主题活动开始；
+    .promotion{
+        width: 1210px;
+        margin: 0 auto;
+        .title{
+            img{
+                display: block;
+            }
+        }
+        .promotion-container{
+            .promotion{
+                margin-bottom: 10px;
+                div{
+                    float: left;
+                    img{
+                        display: block;
+                    }
+                }
+                .img2{
+                    margin: 0 12px;
+                }
+            }
+        .promotion-3{
+            .left{
+                float: left;
+                width: 610px;
+                height: 146px;
+                a{
+                    display: block;
+                    width: 203px;
+                    height: 73px;
+                    float: left;
+                    img{
+                        display: block;
+                    }
+                }
+            }
+            .right{
+                float: left;
+                a{
+                    float: left;
+                }
+            }
+        }    
+        }
+    }
+    // 主题活动结束；
+}
+
+// 底部开始
 footer{
     width: 100%;
     height: 601px;
@@ -248,6 +896,8 @@ footer{
         }
     }
 }
+// 底部结束
+// 底部广告开始；
 #popup{
     height: 120px;
     width: 100%;
@@ -276,3 +926,4 @@ footer{
         }
     }
 }
+// 底部广告结束；
