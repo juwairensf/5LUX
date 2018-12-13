@@ -336,8 +336,8 @@ header{
                 background: url(http://img.5lux.com.cn/vendor/images/v30/overseadef.jpg) no-repeat;
                 background-size: 100% 100%;
             }
-            p{
-                position: relative;
+            .car-container{
+				position: relative;
                 margin-left: 10px;
                 width: 94px;
                 height: 32px;
@@ -346,19 +346,85 @@ header{
                 border: 1px solid #ccc;
                 box-shadow: 0 0 2px rgba(0,0,0,.2);
                 float: right;
-                color: #666;
-                background: url(../images/brandstore_share.png) no-repeat -376px -405px;
-                img{
-                    position: absolute;
-                    left: 10px;
-                    top: 2px;
-                }
+				color: #666;
+				
+				background: url(../images/brandstore_share.png) no-repeat -376px -405px;
+				&:hover{
+					background: rgba(0, 0, 0, .3);
+					color: #CF0101;	
+				}
+                a{
+						position: absolute;
+						left: -20px;
+						top: 2px;
+				}
+				.car-list{
+					display: none;
+					width: 470px;
+                    position:  absolute;
+                    z-index: 11;
+					right: 0;
+					top: 32px;
+					padding-bottom: 10px;
+					background: rgba(0, 0, 0, .3);
+					ul{
+						h3{
+							color: #fff;
+							font-weight: bold;
+							font-size: 18px;
+							height: 30px;
+							line-height: 30px;
+							border-bottom:3px double #fff; 
+						}
+						hr{
+							color: #CF0101;
+						}
+						li{
+							padding: 10px 10px;
+							height: 75px;
+							box-shadow: 0 0 5px #ddd;
+							margin-bottom:10px; 
+							.buy_img{
+								float: left;
+								width: 50px;
+								height: 75px;
+							}
+							strong{
+								color: #fff;
+								display: inline-block;
+								float: left;
+								margin-top: 10px;
+								font-size: 16px;
+								width: 100px;
+								text-align: left;
+								white-space: nowrap;
+								text-overflow: ellipsis;
+								overflow: hidden;
+							}
+							#title{
+								width: 200px;
+							}
+						}
+
+					}
+					button{
+						display: block;
+						width: 100px;
+						height: 30px;
+						line-height: 30px;
+						margin-left: 20px;
+						border: none;
+						outline: none;
+					}
+
+				}
             }
         }
     }
     nav{
         height: 38px;
-        background: #000;
+        border-bottom: 2px solid #ddd;
+        background:url(http://www.5lux.com/vendor/images/v30/navi_1pxbg.png) repeat-x;
         .nav-con{
             width: 1210px;
             margin: 0 auto;
@@ -373,7 +439,6 @@ header{
                         color:#c8a985;
                         font-size: 14px;
                         font-family: "微软雅黑";
-                       
                         &:hover{
                             color: #fff;
                         }
@@ -383,6 +448,7 @@ header{
                         color: #fff;
                         font-family: "微软雅黑";
                         cursor: pointer;
+
                     }
                     i{
                         float: left;
@@ -393,11 +459,15 @@ header{
                         margin-left: 23px;
                     }
                 }
+            
                 li:nth-child(1){
                     width: 130px;
                     background: #CF0101;
                 }
-                li:nth-child(9){
+                .sea{
+                    margin-left: 13px;
+                }
+                li:last-child{
                     float:right;
                     margin-right: 10px;
                     width: 130px;
@@ -496,7 +566,7 @@ header{
     height: 12px;
     border-radius: 50%;
     background: #fff;
-    margin: 2px 6px 0;
+    margin: 2px 6px;
 }
 #banner .pages span.active{
     background: #D00000;
@@ -681,6 +751,45 @@ section{
                 padding: 0 9px;
                 padding-top: 4px;
                 margin-right: 8px;
+                .goods-links{
+                    overflow: hidden;
+                    border-bottom: 1px dashed #d4d4d4;
+                    padding-bottom: 16px;
+                    width: 220px;
+                    height: 197px;
+                    li{
+                        float: left;
+                        height: 36px;
+                        line-height: 36px;
+                        width: 110px;
+                        font-size: 14px;
+                        text-align: left;
+                        margin-right: 0;
+                        a{
+                            float: left;
+                            color: #666;
+                        }
+                    }
+                }
+                .slide-box{
+                    li{
+                        margin-top: 20px;
+                        width: 224px;
+                        height: 114px;
+                        a{
+                            display: block;
+                            float: left;
+                            img{
+                                display: block;
+                                width: 90px;
+                                height: auto;
+                                margin-bottom: 12px;
+                                margin-left: 12px;
+                            }
+                           
+                        }
+                    }
+                }
             }
             .goods2{
                 float: left;

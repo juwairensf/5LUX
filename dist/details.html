@@ -9,11 +9,12 @@
     <link rel="stylesheet" href="./css/details.css">
     <script src="./js/jquery.js"></script>
     <script src="./js/common.js"></script>
+    <script src="./js/details.js"></script>
 </head>
 <body>
     <!-- 头部广告开始 -->
     <div id="active">
-        <a href="#">
+        <a href="http://localhost:8888/active.html">
             <img src="http://img550.5lux.com.cn/2018/11/22/qr/154288026284_1300x80.jpg" alt="">
         </a>
     </div>
@@ -40,7 +41,7 @@
         </div>
     <!-- 右边菜单结束 -->
     <header>
-        <div class="top">
+            <div class="top">
                 <div class="container-top">
                     <ul class="clearfix">
                         <li>
@@ -54,11 +55,11 @@
                     </ul>
                     <ul class="log">
                         <li>
-                            <a href="javascript:void(0)">登录</a>
+                            <a href="http://localhost:8888/login.html">登录</a>
                         </li>
                         <li>
                             <span></span>
-                            <a href="javascript:void(0)">注册</a>
+                            <a href="http://localhost:8888/register.html">注册</a>
                         </li>
                         <li id="menu">
                             <a href="javascript:void(0)">我的第五大道</a>
@@ -81,8 +82,8 @@
                         </li>
                     </ul>
                 </div>
-                
-                
+               
+               
             </div>
             <div class="middle clearfix">
                 <div class="middle-left clearfix">
@@ -97,10 +98,24 @@
                 </div>
                 <div class="middle-right">
                     <span></span>
-                    <p>
-                        <img src="http://www.5lux.com/vendor/images/v30/v30cart.png" alt="">
-                        （0）
-                    </p>
+                    <div class="car-container">
+                        <a href=""> <img src="http://www.5lux.com/vendor/images/v30/v30cart.png" alt=""></a>
+						
+						<div class="car-list">
+							
+							<ul>
+								<h3>购物车商品</h3>
+								<!-- <li class="clearfix">
+									<img class="buy_img" src="http://img550.5lux.com.cn/2017/10/19/ef/150839370254_800x800.jpg" alt="">
+								 	<strong id="title">香水</strong >
+									<strong id="price">￥6666</strong >
+									<strong id="mount">1</strong >
+									
+								</li>  -->
+							</ul>
+							<button id="clear">清空购物车</button>
+					  </div>
+                    </div>
                 </div>
             </div>
             <nav>
@@ -156,7 +171,529 @@
             </nav>
     </header>
 
-   
+    <!-- 内容开始 -->
+    <div class="Details_box">
+		<div class="Magnifier">
+			<div class="Magnifier_shop">
+				<img src="http://img550.5lux.com.cn/2018/01/04/mn/151503574319_800x800.jpg" />
+				<div id="Magnifier_shop_S">
+
+				</div>
+				<div class="Magnifier_shop_B">
+					<img src="" />
+				</div>
+			</div>
+			<div class="Magnifier_shop_list">
+				<div class="Magnifier_shop_list_L"><i></i></div>
+				<div class="Magnifier_shop_list_R"><i></i></div>
+				<ul>
+					<li>
+						<img class="Simg1" src="http://img550.5lux.com.cn/2017/10/19/ef/150839370254_800x800.jpg" />
+					</li>
+					<li>
+						<img class="Simg2" src="http://img550.5lux.com.cn/2017/10/19/uv/150839370380_800x800.jpg" />
+					</li>
+					<li>
+						<img class="Simg3" src="http://img550.5lux.com.cn/2018/01/04/fg/151503579973_800x800.jpg" />
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="Details_right">
+			<div class="Details_right_content">
+				<h4>Yves Saint Laurent（YSL）伊夫圣罗兰</h4>
+				<span>货号: 5Lux859687g_p3397505</span>
+			</div>
+			<div class="Details_right_prices">
+				<p>￥6666</p>
+				<span>¥8888</span>
+				<i>红卡会员价</i>
+				<div class="Details_rightphone_qr">
+					<i></i>
+					<span>扫描下载手机客户端</span>
+					
+				</div>
+			</div>
+			<div class="Details_right_fenqi">
+				<p>分期价</p>
+				<i></i>
+				<span>x12期 </span>
+			</div>
+			<div class="Details_right_service">
+
+			</div>
+			<div class="Details_right_activity">
+				<p>活动</p>
+				<i>
+					订单满9999元送价值1199元时尚管家服务<br/>
+					全网商品支持商通卡线下支付<br/>
+					双12美妆限时满减!<br/>
+					双12美妆限时满减!<br/>
+					双12美妆限时满减!<br/>
+					双12美妆限时满减!<br/>
+				</i>
+			</div>
+			<div class="Details_right_color">
+				<p>颜色</p>
+				<div>黑色</div>
+			</div>
+			<div class="Details_right_num">
+				<p>数量</p>
+				<div class="Details_right_sel">
+					<span onselectstart="return false">-</span>
+					<input type="text" id="Details_right_num_btn" value="1" />
+					<span onselectstart="return false">+</span>
+				</div>
+			</div>
+			<div class="Details_rightintroduce">
+				<p>
+					<i>发货门店</i> 此货品将由
+					<b><a href="">第五大道奢侈品网</a></b> 为您发货
+				</p>
+				<p>
+					<i>发货时效</i> 预计5-15个工作日发货，延迟发货慢必赔！查看详情》
+				</p>
+				<p>
+					<i>温馨提示</i> 本商品有质量问题支持7天退换货
+				</p>
+				<p>
+					<i>包邮政策</i> 白金钻石顺丰包邮，注册用户满99元包邮
+				</p>
+				<p>
+					<i>发票政策</i> 海外商品暂不支持发票
+				</p>
+			</div>
+			<div class="Details_purchase_box">
+				<div class="Details_purchase" onselectstart="return false">
+					立即购买
+				</div>
+				<div class="Details_purchase_dai add_buy" onselectstart="return false">
+					加入购物袋
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="share_box">
+		<ul class="share">
+			<li></li>
+			<li>分享</li>
+			<li></li>
+			<li>收藏 ( 已有4993人收藏 )</li>
+		</ul>
+		<ol class="credit">
+			<li>
+				<i></i> 100%正品保证
+			</li>
+			<li>
+				<i></i> 商业部诚信企业
+			</li>
+			<li>
+				<i></i> 无忧售后保障
+			</li>
+		</ol>
+	</div>
+	<div class="introduce_box">
+		<div class="introduce">
+			<div class="introduce_T">
+				第五大道奢侈品网
+				<i></i>
+			</div>
+			<div class="introduce_P">
+				<ul>
+					<li>商品详情</li>
+					<li>尺寸参照</li>
+					<li>商品评价</li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="Recommend_list_box">
+		<div class="Recommend_list">
+			<div class="Recommend">
+				<div class="Hot_sale">
+					热销排行
+				</div>
+				<ul class="Hot_sale_list">
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img550.5lux.com.cn/2017/12/19/cd/151365395523_800x800_200x200.jpg" />
+								</a>
+								<i>
+								<b>1</b>
+							</i>
+
+							</li>
+							<li>
+								<a href="">真我淡香水 100ml</a>
+							</li>
+							<li>
+								¥  1121
+							</li>
+						</ol>
+					</li>
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img550.5lux.com.cn/2017/11/15/ef/151073088672_800x800_200x200.jpg" />
+								</a>
+								<i>
+								<b>2</b>
+							</i>
+
+							</li>
+							<li>
+								<a href="">奇葩淡香氛 100ml</a>
+							</li>
+							<li>
+								¥  1283
+							</li>
+						</ol>
+					</li>
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img.5lux.com.cn/511/avatar/2016/03/26/14589806792324_200x200.jpg" />
+								</a>
+								<i>
+								<b>3</b>
+							</i>
+
+							</li>
+							<li>
+								<a href="">Italian Cypress意大利丝柏中性香水 EDP 50ML</a>
+							</li>
+							<li>
+								¥  1952
+							</li>
+						</ol>
+					</li>
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img550.5lux.com.cn/2017/06/13/bc/149732149626_800x800.jpg" />
+								</a>
+								<i>
+								<b>4</b>
+							</i>
+
+							</li>
+							<li>
+								<a href=""> 奇迹香水 30ml </a>
+							</li>
+							<li>
+								¥  417
+							</li>
+						</ol>
+					</li>
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img.5lux.com.cn/510/images/201403/thumb_img/32838_thumb_G_1394617387550.jpg" />
+								</a>
+								<i>
+									<b>5</b>
+								</i>
+							</li>
+							<li>
+								<a href="">魅惑系列淡香水 100ml</a>
+							</li>
+							<li>
+								¥  1380
+							</li>
+						</ol>
+					</li>
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img550.5lux.com.cn/2017/11/15/lm/151072699532_800x800_200x200.jpg" />
+								</a>
+								<i>
+									<b>6</b>
+								</i>
+							</li>
+							<li>
+								<a href="">沙丘女士淡香水 100ml</a>
+							</li>
+							<li>
+								¥  1159
+							</li>
+						</ol>
+					</li>
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img.5lux.com.cn/511/2016/08/30/cd/147253812663_800x800_200x200.jpg" />
+								</a>
+								<i>
+								<b>7</b>
+							</i>
+
+							</li>
+							<li>
+								<a href="">梦幻天堂女士香水50ml</a>
+							</li>
+							<li>
+								¥  495
+							</li>
+						</ol>
+					</li>
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img550.5lux.com.cn/2018/01/10/uv/151555791865_800x800.jpg" />
+								</a>
+								<i>
+								<b>8</b>
+							</i>
+
+							</li>
+							<li>
+								<a href="">大地男士香水 50ml</a>
+							</li>
+							<li>
+								¥  565
+							</li>
+						</ol>
+					</li>
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img550.5lux.com.cn/2017/05/27/np/149587449950_800x800_200x200.jpg" />
+								</a>
+								<i>
+								<b>9</b>
+							</i>
+
+							</li>
+							<li>
+								<a href="">迪奥之韵女士香水 50ml</a>
+							</li>
+							<li>
+								¥  664
+							</li>
+						</ol>
+					</li>
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img.5lux.com.cn/511/avatar/2016/03/26/14589848509462_200x200.jpg" />
+								</a>
+								<i>
+								<b>10</b>
+							</i>
+
+							</li>
+							<li>
+								<a href="">私家珍藏SANTAL BLUSH檀木女士香水EDP 50ML</a>
+							</li>
+							<li>
+								¥  1952
+							</li>
+						</ol>
+					</li>
+				</ul>
+			</div>
+			<div class="Recommend">
+				<div class="Hot_sale">
+					同品牌推荐
+				</div>
+				<ul class="Hot_sale_list">
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img550.5lux.com.cn/2017/11/07/ij/151002255753_800x800_200x200.jpg" />
+								</a>
+							</li>
+							<li>
+								<a href="">天之骄子运动男士淡香水 40ml</a>
+							</li>
+							<li>
+								¥  523
+							</li>
+						</ol>
+					</li>
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img550.5lux.com.cn/2017/11/07/ij/151002439056_800x800_200x200.jpg" />
+								</a>
+							</li>
+							<li>
+								<a href="">巴黎女士淡香水 50ml</a>
+							</li>
+							<li>
+								¥  782
+							</li>
+						</ol>
+					</li>
+				</ul>
+			</div>
+			<div class="Recommend">
+				<div class="Hot_sale">
+					浏览记录
+				</div>
+				<ul class="Hot_sale_list">
+					<li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img550.5lux.com.cn/2017/11/07/ij/151002439056_800x800_200x200.jpg" />
+								</a>
+							</li>
+							<li>
+								<a href="">巴黎女士淡香水 50ml</a>
+							</li>
+							<li>
+								¥  782
+							</li>
+						</ol>
+                    </li>
+                    <li>
+						<ol>
+							<li>
+								<a href="">
+									<img src="http://img550.5lux.com.cn/2017/11/07/ij/151002439056_800x800_200x200.jpg" />
+								</a>
+							</li>
+							<li>
+								<a href="">巴黎女士淡香水 50ml</a>
+							</li>
+							<li>
+								¥  782
+							</li>
+						</ol>
+					</li>
+				</ul>
+			</div>
+			<div class="Recommend">
+				<div class="Hot_sale">
+					海外咨询
+				</div>
+				<ul class="Hot_sale_list_b">
+					<li>
+						<i>
+							<a href="">
+								<img src="http://img550.5lux.com.cn/2017/12/29/cd/151455138864_800x600.jpg" />
+							</a>
+						</i>
+						<i>
+							<a href="">条条道路通罗马，加拿大各省移民攻略！</a>
+						</i>
+					</li>
+					<li>
+						<i>
+							<a href="">
+								<img src="http://img550.5lux.com.cn/2017/12/29/st/151455134990_800x600.jpg" />
+							</a>
+						</i>
+						<i>
+							<a href="">BOTC 高逼格的移民法宝！</a>
+						</i>
+					</li>
+					<li>
+						<i>
+							<a href="">
+								<img src="http://img550.5lux.com.cn/2017/12/21/mn/151384358666_700x465.jpg" />
+							</a>
+						</i>
+						<i>
+							<a href="">为什么我要去美国生子，只因为城市套路深？</a>
+						</i>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="Recommend_right">
+			<div class="Recommend_right_L1">
+				<a href="">
+					<img src="http://img550.5lux.com.cn/2018/12/03/rs/154382638655_1920x600.jpg" />
+				</a>
+			</div>
+			<div class="Recommend_right_L2">
+				<a href="">
+					<img src="http://img550.5lux.com.cn/2018/12/04/ef/154391419295_750x560.jpg" />
+				</a>
+				<a href="">
+					<img src="http://img550.5lux.com.cn/2018/11/01/gh/154106302167_750x560.jpg" />
+				</a>
+			</div>
+			<div class="brand_story_h">
+				<img src="http://www.5lux.com/vendor/images/good/detail_desc/brand_story.jpg" />
+			</div>
+			<div class="brand_story">
+				<div class="brand_story_img">
+					<img src="http://img550.5lux.com.cn/2017/10/19/bc/150839379346_400x244.jpg" />
+				</div>
+				<div class="brand_story_text">
+					<h3> Yves Saint Laurent（YSL）伊夫圣罗兰</h3>
+					<p>
+							YSL全名：Yves Saint Lauret，中文名：伊夫圣罗兰。Yves Saint Laurent 先生纵横流行舞台，呼风唤雨40年，创造了无数流行趋势。Saint Laurent 弄潮时尚界，但从不媚俗，在探索新样式时总是将立足点放在传统精神的继承上，赋予时装的时代意义。
+					</p>
+				</div>
+			</div>
+			<div class="brand_story_b">
+                <img src="http://www.5lux.com/vendor/images/good/detail_desc/product_display.jpg" alt="">
+				<img src="http://img550.5lux.com.cn/2017/10/19/cd/150839370377_990x500.jpg" />
+			</div>
+			<div class="maintenance">
+                <p> <img src="http://img550.5lux.com.cn/2017/10/19/uv/150839370434_990x461.jpg" alt=""></p>
+                <p> <img src="http://img550.5lux.com.cn/2017/10/19/mn/150839370447_800x800.jpg" alt=""></p>
+                <p> <img src="http://img550.5lux.com.cn/2017/10/19/ef/150839370434_990x529.jpg" alt=""></p>
+                <p> <img src="http://img550.5lux.com.cn/2017/10/19/qr/150839370549_990x687.jpg" alt=""></p>
+                <p> <img src="http://img550.5lux.com.cn/2017/10/19/np/150839370543_990x755.jpg" alt=""></p>
+               
+                <p> <img src="http://img550.5lux.com.cn/2017/10/19/st/150839370692_990x1020.jpg" alt=""></p>
+                <p> <img src="http://img550.5lux.com.cn/2017/10/19/kl/150839370619_990x735.jpg" alt=""></p>
+                <p> <img src="http://img550.5lux.com.cn/2017/10/19/de/150839370683_990x593.jpg" alt=""></p>
+                <p> <img src="http://img550.5lux.com.cn/2017/10/19/jk/150839370637_990x748.jpg" alt=""></p>
+                <p> <img src="http://img550.5lux.com.cn/2017/10/19/cd/150839370780_990x677.jpg" alt=""></p>
+                <p> <img src="http://img550.5lux.com.cn/2017/10/19/mn/150839370747_990x759.jpg" alt=""></p>
+
+            </div>
+			
+		
+			<div class="authenticity">
+				<p>
+					<img src="http://www.5lux.com/vendor/images/good/detail_desc/authenticity_guarantee.jpg" />
+				</p>
+				<p class="authenticity_b">
+					<img src="http://img550.5lux.com.cn/2018/01/19/st/151632723423_1440x520.jpg" />
+				</p>
+			</div>
+			<div class="about5lux_com">
+				<p>
+					<img src="http://www.5lux.com/vendor/images/good/detail_desc/about_5lux.jpg" />
+				</p>
+				<div class="about5lux_com_banner_box">
+					<div class="about5lux_com_banner_btn_L"></div>
+					<div class="about5lux_com_banner_btn_R"></div>
+					<ul id="about5lux_com_banner">
+						<li>
+							<a href="" title="">
+								<img src="http://img550.5lux.com.cn/2018/01/19/ef/151632723692_1440x520.jpg" />
+							</a>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- 内容结束 -->
 
 
     <footer>
@@ -273,11 +810,6 @@
                 </p>
             </div>
     </footer>
-    <div id="popup">
-        <div class="popup-box">
-            <img src="http://www.5lux.com/vendor/images/v30/foot_popup.png" alt="">
-            <a id="close" href="javascript:void(0)"></a>
-        </div>
-    </div>
+   
     </body>
     </html>

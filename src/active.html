@@ -10,11 +10,12 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/active.js"></script>
     <script src="./js/common.js"></script>
+    <script src="./js/details.js"></script>
 </head>
 <body>
      <!-- 头部广告开始 -->
      <div id="active">
-        <a href="#">
+        <a href="http://localhost:8888/active.html">
             <img src="http://img550.5lux.com.cn/2018/11/22/qr/154288026284_1300x80.jpg" alt="">
         </a>
     </div>
@@ -57,11 +58,11 @@
                 </ul>
                 <ul class="log">
                     <li>
-                        <a href="javascript:void(0)">登录</a>
+                        <a href="http://localhost:8888/login.html">登录</a>
                     </li>
                     <li>
                         <span></span>
-                        <a href="javascript:void(0)">注册</a>
+                        <a href="http://localhost:8888/register.html">注册</a>
                     </li>
                     <li id="menu">
                         <a href="javascript:void(0)">我的第五大道</a>
@@ -100,10 +101,24 @@
             </div>
             <div class="middle-right">
                 <span></span>
-                <p>
-                    <img src="http://www.5lux.com/vendor/images/v30/v30cart.png" alt="">
-                    （0）
-                </p>
+                <div class="car-container">
+                    <a href=""> <img src="http://www.5lux.com/vendor/images/v30/v30cart.png" alt=""></a>
+                    
+                    <div class="car-list">
+                        
+                        <ul>
+                            <h3>购物车商品</h3>
+                            <!-- <li class="clearfix">
+                                <img class="buy_img" src="http://img550.5lux.com.cn/2017/10/19/ef/150839370254_800x800.jpg" alt="">
+                                 <strong id="title">香水</strong >
+                                <strong id="price">￥6666</strong >
+                                <strong id="mount">1</strong >
+                                
+                            </li>  -->
+                        </ul>
+                        <button id="clear">清空购物车</button>
+                  </div>
+                </div>
             </div>
         </div>
         <nav>

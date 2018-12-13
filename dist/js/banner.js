@@ -16,7 +16,7 @@ $(function(){
     // 选中按钮的包裹；
     var $pages=$(".pages");
     // console.log($pages);
-
+    
     // 找到最后的一张图片的下标；
     var maxIndex=$slides.length-1;
     // console.log(maxIndex);
@@ -51,7 +51,7 @@ $(function(){
     }
 
     //当我们在切换图片的时候，只不过是在操作index；
-
+    
     function changeClass(){
         $slides.eq(prve_index).addClass("slide-willhide")
         .siblings(".slide")
@@ -113,6 +113,6 @@ $(function(){
     $(".container").hover(function(){
         clearInterval(banner_timer);
     },function(){
-        banner_timer=setInterval('$(".right").trigger("click")',3000)
+        banner_timer=setInterval('$(".right").trigger("click")',2000)
     })
 })

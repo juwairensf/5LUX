@@ -27,12 +27,21 @@ $(function(){
                         <div class="good-detail clearfix">
                             <span>￥${json[i].price}</span>
                             <span>￥${json[i].orgPrice}</span>
-                            <button>立即购买</button>
+                            <button class="buybtns" data="${json[i].tradeItemId}">立即购买</button>
                         </div>
                         
                     </div>
             `
+            
+            
         }
+        $(".container-goods").on("click",".buybtns",function(){
+            // console.log(111)
+            var dataId = $(this).attr("data");
+            console.log(dataId)
+            setCookie("data",dataId)
+            location.href = "http://localhost:8888/details.html"
+        })
         return $(".container-goods").html(html);
     }
 })

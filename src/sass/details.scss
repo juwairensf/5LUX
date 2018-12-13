@@ -336,8 +336,8 @@ header{
                 background: url(http://img.5lux.com.cn/vendor/images/v30/overseadef.jpg) no-repeat;
                 background-size: 100% 100%;
             }
-            p{
-                position: relative;
+            .car-container{
+				position: relative;
                 margin-left: 10px;
                 width: 94px;
                 height: 32px;
@@ -346,19 +346,84 @@ header{
                 border: 1px solid #ccc;
                 box-shadow: 0 0 2px rgba(0,0,0,.2);
                 float: right;
-                color: #666;
-                background: url(../images/brandstore_share.png) no-repeat -376px -405px;
-                img{
-                    position: absolute;
-                    left: 10px;
-                    top: 2px;
-                }
+				color: #666;
+				
+				background: url(../images/brandstore_share.png) no-repeat -376px -405px;
+				&:hover{
+					background: rgba(0, 0, 0, .3);
+					color: #CF0101;	
+				}
+                a{
+						position: absolute;
+						left: -20px;
+						top: 2px;
+				}
+				.car-list{
+					display: none;
+					width: 470px;
+					position:  absolute;
+					right: 0;
+					top: 32px;
+					padding-bottom: 10px;
+					background: rgba(0, 0, 0, .3);
+					ul{
+						h3{
+							color: #fff;
+							font-weight: bold;
+							font-size: 18px;
+							height: 30px;
+							line-height: 30px;
+							border-bottom:3px double #fff; 
+						}
+						hr{
+							color: #CF0101;
+						}
+						li{
+							padding: 10px 10px;
+							height: 75px;
+							box-shadow: 0 0 5px #ddd;
+							margin-bottom:10px; 
+							.buy_img{
+								float: left;
+								width: 50px;
+								height: 75px;
+							}
+							strong{
+								color: #fff;
+								display: inline-block;
+								float: left;
+								margin-top: 10px;
+								font-size: 16px;
+								width: 100px;
+								text-align: left;
+								white-space: nowrap;
+								text-overflow: ellipsis;
+								overflow: hidden;
+							}
+							#title{
+								width: 200px;
+							}
+						}
+
+					}
+					button{
+						display: block;
+						width: 100px;
+						height: 30px;
+						line-height: 30px;
+						margin-left: 20px;
+						border: none;
+						outline: none;
+					}
+
+				}
             }
         }
     }
     nav{
         height: 38px;
-        background: #000;
+        border-bottom: 2px solid #ddd;
+        background:url(http://www.5lux.com/vendor/images/v30/navi_1pxbg.png) repeat-x;
         .nav-con{
             width: 1210px;
             margin: 0 auto;
@@ -373,7 +438,6 @@ header{
                         color:#c8a985;
                         font-size: 14px;
                         font-family: "微软雅黑";
-                       
                         &:hover{
                             color: #fff;
                         }
@@ -383,6 +447,7 @@ header{
                         color: #fff;
                         font-family: "微软雅黑";
                         cursor: pointer;
+
                     }
                     i{
                         float: left;
@@ -393,11 +458,15 @@ header{
                         margin-left: 23px;
                     }
                 }
+            
                 li:nth-child(1){
                     width: 130px;
                     background: #CF0101;
                 }
-                li:nth-child(9){
+                .sea{
+                    margin-left: 13px;
+                }
+                li:last-child{
                     float:right;
                     margin-right: 10px;
                     width: 130px;
@@ -423,6 +492,958 @@ header{
     }
 }
 // 头部结束；
+
+// 内容开始；
+.Details_box {
+	width: 1210px;
+	height: 740px;
+	margin: 17px auto 0;
+}
+.Magnifier{
+	width: 480px;
+	height: 720px;
+	float: left;
+	border: 1px solid #999;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.Magnifier_shop{
+	width: 400px;
+	height: 600px;
+	border: 1px solid #ccc;
+	margin-bottom: 1px;
+	position: relative;
+}
+.Magnifier_shop>img{
+	width: 400px;
+	height: 600px;
+}
+#Magnifier_shop_S{
+	width: 240px;
+	height: 240px;
+	background: transparent;
+	box-shadow: 0 0 5px 3px #666;
+	opacity: 0.4;
+	position: absolute;
+	top: 0;
+	cursor: move;
+	display: none;
+}
+.Magnifier_shop_B{
+	width: 400px;
+	height: 600px;
+	box-shadow: 0 0 5px 3px #666;
+	position: absolute;
+	left: 450px;
+	top: 0;
+	overflow: hidden;
+	display: none;
+	// transform: scale(0,0);
+	// transition: all 0.7s;
+}
+.Magnifier_shop_B>img{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.Magnifier_shop_list{
+	margin-top: 20px;
+	width: 403px;
+	height: 87px;
+	position: relative;
+}
+.Magnifier_shop_list_L,.Magnifier_shop_list_R{
+	width: 15PX;
+	height: 77PX;
+	background: #CCC;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+}
+
+.Magnifier_shop_list_L{
+	left: 0;
+}
+.Magnifier_shop_list_R{
+	right: 0;
+}
+.Magnifier_shop_list_L>i,.Magnifier_shop_list_R>i{
+	width: 9PX;
+	height: 14PX;
+	display: block;
+	margin: 36px auto;
+	
+}
+.Magnifier_shop_list_L>i{
+	background-position: -240px -384px;
+}
+.Magnifier_shop_list_R>i{
+	background-position: -267px -384px;
+}
+.Magnifier_shop_list>ul{
+	width: 445px;
+	height: 77px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.Magnifier_shop_list>ul>li{
+	width: 50px;
+	height: 75px;
+	border: 1px solid #999;
+	float: left;
+	margin-right: 6px;
+}
+.Magnifier_shop_list>ul>li:nth-child(1){
+	margin-left: 20px;
+}
+.Magnifier_shop_list>ul>li>img{
+	width: 50px;
+	height: 75px;
+	cursor: pointer;
+}
+.Details_right{
+	width: 660px;
+	height: 740px;
+	float: right;
+	border: 1px solid #999;
+	padding-left: 10px;
+}
+.Details_right_content{
+	width: 560px;
+	height: 90px;
+	border-bottom: 1px dashed #999;
+}
+.Details_right_content>h4{
+	height: 32px;
+	font-size: 18px;
+	line-height: 32px;
+	color: #666666;
+	font-weight: normal;
+}
+.Details_right_content>span{
+	margin-top: 25px;
+	display: block;
+	height: 31px;
+	font-size: 12px;
+	line-height: 31px;
+	color: #666;
+}
+.Details_right_prices{
+	width: 560px;
+	height: 55px;
+}
+.Details_right_prices>p{
+	color: #c8a985;
+	line-height: 55px;
+	font-size: 24px;
+	margin-left: 6px;
+	display: inline-block;
+}
+.Details_right_prices>span{
+	color: #666;
+	height: 12px;
+	font-size: 12px;
+	line-height: 12px;
+	margin: 29px 5px 0 9px;
+	text-decoration: line-through;
+}
+.Details_right_prices>i{
+	display: inline-block;
+	width: 80px;
+	height: 20px;
+	margin-top: 25px;
+	border-radius: 10px;
+	background: #c8a985;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	font-size: 12px;
+	margin-right: 42px;
+}
+.Details_rightphone_qr{
+	height: 14px;
+	padding: 20px 0 21px;
+	float: right;
+	font-size: 12px;
+	display: flex;
+	margin-right: 50px;
+	cursor: pointer;
+	position: relative;
+}
+.Details_rightphone_qr>i{
+	display: inline-block;
+	width: 31px;
+	height: 14px;
+	margin-right: 3px;
+	background-position: -288px -378px;
+}
+.Details_rightphone_qr>div{
+	position: absolute;
+	left: 0;
+	top: 55px;
+	display: none;
+}
+.Details_right_fenqi{
+	height: 48px;
+}
+.Details_right_fenqi>p{
+	margin-left: 10px;
+	float: left;
+	font-size: 12px;
+	color: #000;
+	line-height: 48px;
+}
+.Details_right_fenqi>i{
+	display: inline-block;
+	height: 48px;
+	font-size: 20px;
+	line-height: 48px;
+	color: #c8a985;
+	margin-left: 58px;
+}
+.Details_right_service{
+	height: 40px;
+	width: 560px;
+	border-bottom: 1px dashed #999;
+}
+.Details_right_activity{
+	width: 547px;
+	height: 180px;
+	padding-left: 13px;
+	border-bottom: 1px dashed #999;
+}
+.Details_right_activity>p{
+	font-size: 12px;
+	line-height: 1em;
+	padding-top: 12px;
+	height: 48px;
+	width: 80px;
+	float: left;
+}
+.Details_right_activity>i{
+	display: inline-block;
+	height: 60px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #c8a985;
+}
+.Details_right_color{
+	width: 547px;
+	height: 75px;
+	padding-left: 13px;
+}
+.Details_right_color>p{
+	font-size: 12px;
+	line-height: 1em;
+	padding-top: 12px;
+	height: 63px;
+	width: 80px;
+	float: left;
+}
+.Details_right_color>div{
+	display: inline-block;
+	width: 32px;
+	height: 30px;
+	border: 1px solid #ddd;
+	margin-top: 4px;
+	text-align: center;
+	line-height: 30px;
+	background: #fff;
+}
+.Details_right_num{
+	width: 547px;
+	height: 44px;
+	padding-left: 13px;
+	border-bottom: 1px dashed #999;
+}
+.Details_right_num>p{
+	font-size: 12px;
+	line-height: 1em;
+	padding-top: 12px;
+	height: 32px;
+	width: 80px;
+	float: left;
+}
+.Details_right_sel{
+	width: 94px;
+	height: 22px;
+	display: flex;
+	justify-content: space-between;
+}
+.Details_right_sel>span{
+	width: 22px;
+	height: 22px;
+	background: #c8a985;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+}
+#Details_right_num_btn{
+	display: inline-block;
+	width: 44px;
+	height: 20px;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+.Details_rightintroduce{
+	width: 560px;
+	height: 120px;
+	
+}
+.Details_rightintroduce{
+	width: 547px;
+	height: 120px;
+	padding-left: 13px;
+	font-size: 12px;
+	line-height: 24px;
+	color: #999;
+}
+.Details_rightintroduce>p>i{
+	height: 24px;
+	width: 80px;
+	float: left;
+}
+.Details_rightintroduce>p>b{
+	font-weight: normal;
+}
+.Details_rightintroduce>p a{
+	color: #c8a985;
+	text-decoration: underline;
+}
+.Details_rightintroduce>p a:hover{
+	color: #c8a985;
+}
+.Details_purchase_box{
+	height: 41px;
+	padding-top: 14px;
+	width: 550px;
+	padding-left: 10px;
+}
+.Details_purchase{
+	width: 118px;
+	height: 33px;
+	border: 1px solid #c8a985;
+	background: #fff;
+	text-align: center;
+	line-height: 33px;
+	font-size: 14px;
+	color: #c8a985;
+	cursor: pointer;
+	float: left;
+}
+.Details_purchase_dai{
+	width: 150px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+	background: #c8a985;
+	float: left;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+.share_box {
+	width: 1210px;
+	height: 92px;
+	margin: 0 auto;
+}
+
+.share {
+	width: 235px;
+	height: 18px;
+	margin-left: 22px;
+	padding-top: 46px;
+	float: left;
+	display: flex;
+}
+
+.share>li {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.share>li:nth-of-type(1) {
+	width: 18px;
+	height: 18px;
+	background-position: -71px -342px;
+	margin-right: 11px;
+	cursor: pointer;
+}
+
+.share>li:nth-of-type(3) {
+	width: 18px;
+	height: 18px;
+	background-position: -29px -342px;
+	margin-left: 20px;
+	margin-right: 11px;
+	cursor: pointer;
+}
+
+.credit {
+	float: right;
+	width: 560px;
+	height: 48px;
+	margin-top: 24px;
+	display: flex;
+}
+
+.credit>li {
+	height: 48px;
+	font-size: 14px;
+	line-height: 48px;
+	color: #999;
+	cursor: pointer;
+	display: flex;
+}
+
+.credit>li:nth-of-type(1) {
+	width: 197px;
+}
+
+.credit>li:nth-of-type(2) {
+	width: 202px;
+}
+
+.credit>li:nth-of-type(3) {
+	width: 161px;
+}
+
+.credit>li>i {
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	margin-right: 16px;
+}
+
+
+.introduce_box {
+	width: 100%;
+	height: 35px;
+	background: #fff;
+	z-index: 999;
+}
+
+.introduce {
+	width: 1210px;
+	margin: 0 auto;
+	height: 35px;
+	margin-bottom: 10px;
+}
+
+.introduce_T {
+	width: 198px;
+	height: 33px;
+	border: 1px solid #999;
+	text-align: center;
+	position: relative;
+	font-size: 12px;
+	line-height: 33px;
+	float: left;
+}
+
+.introduce_T>i {
+	background-position: -235px -302px;
+	display: block;
+	width: 9px;
+	height: 5px;
+	position: absolute;
+	right: 11px;
+	top: 14px;
+}
+
+.introduce_P {
+	width: 868px;
+	height: 33px;
+	border: 1px solid #999;
+	float: right;
+}
+
+.introduce_P>ul {
+	width: 868px;
+	height: 15px;
+	margin-top: 8px;
+}
+
+.introduce_P>ul>li {
+	width: 197px;
+	height: 15px;
+	text-align: center;
+	border-right: 1px solid #999;
+	float: left;
+	font-size: 12px;
+	line-height: 15px;
+	color: #666;
+	cursor: pointer;
+}
+
+.introduce_P>ul>li:nth-of-type(1) {
+	color: #e6b984;
+}
+
+.introduce_P>ul>div {
+	float: right;
+	font-size: 12px;
+	line-height: 15px;
+	color: #666;
+	display: flex;
+	position: relative;
+	height: 15px;
+	min-width: 100px;
+}
+
+.introduce_P>ul>div>i {
+	display: block;
+	background-position: -288px -378px;
+	margin: 0 8px 0 13px;
+	width: 31px;
+	height: 14px;
+	cursor: pointer;
+}
+.phone_qr>div {
+	width: 128px;
+	text-align: center;
+	line-height: 35px;
+	height: 35px;
+	font-size: 12px;
+	color: #666;
+	font-weight: normal;
+}
+
+.Recommend_list_box {
+	width: 1210px;
+	margin: 40px auto 0;
+	height: 8500px;
+	padding-bottom: 31px;
+}
+
+.Recommend_list {
+	width: 198px;
+	float: left;
+	margin-bottom: 30px;
+}
+
+.Recommend {
+	width: 198px;
+	/*height: 2597px;*/
+	border: 1px solid #999;
+	margin-bottom: 30px;
+}
+
+.Hot_sale {
+	width: 198px;
+	height: 33px;
+	background: #bfa69a;
+	font-size: 12px;
+	line-height: 33px;
+	text-align: center;
+	color: #fff;
+}
+
+.Hot_sale_list {
+	width: 158px;
+	margin: 0 auto;
+}
+
+.Hot_sale_list>li {
+	width: 158px;
+	height: 229px;
+	border-bottom: 1px solid #999;
+	margin-top: 25px;
+}
+
+.Hot_sale_list>li>ol {
+	width: 158px;
+	height: 229px;
+}
+
+.Hot_sale_list>li>ol>li {
+	width: 141px;
+	margin: 0 auto;
+}
+
+.Hot_sale_list>li>ol>li:nth-of-type(1) {
+	height: 141px;
+	position: relative;
+	cursor: pointer;
+}
+
+.Hot_sale_list>li>ol>li:nth-of-type(1)>i {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 29px;
+	top: 0;
+	left: 0;
+}
+
+.Hot_sale_list>li>ol>li:nth-of-type(1)>i>b {
+	display: block;
+	position: absolute;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	top: -5px;
+	left: 3px;
+	font-weight: normal;
+}
+
+.Hot_sale_list>li>ol>li:nth-of-type(1) img {
+	width: 100%;
+	height: 100%;
+}
+
+.Hot_sale_list>li>ol>li:nth-of-type(2) {
+	font-size: 12px;
+	overflow: hidden;
+	line-height: 20px;
+	margin-bottom: 6px;
+	cursor: pointer;
+}
+
+.Hot_sale_list>li>ol>li:nth-of-type(2)>a:hover {
+	color: #c8a985;
+}
+
+.Hot_sale_list>li>ol>li:nth-of-type(3) {
+	color: #c8a985;
+}
+
+.Hot_sale_list_b {
+	width: 158px;
+	margin: 0 auto;
+}
+
+.Hot_sale_list_b>li {
+	width: 158px;
+	/*height: 127px;*/
+	border-bottom: 1px solid #999;
+	margin-top: 25px;
+}
+
+.Hot_sale_list_b>li>i {
+	display: block;
+}
+
+.Hot_sale_list_b>li>i:nth-of-type(1) {
+	width: 136px;
+	height: 102px;
+	margin: 6px auto 0;
+}
+
+.Hot_sale_list_b>li>i:nth-of-type(1) img {
+	width: 136px;
+	height: 102px;
+}
+
+.Hot_sale_list_b>li>i:nth-of-type(2) {
+	width: 158px;
+	margin: 0 auto;
+	font-size: 12px;
+	line-height: 20px;
+	color: #666;
+}
+
+.Hot_sale_list_b>li>i:nth-of-type(2)>a:hover {
+	color: #c8a985;
+}
+
+.Recommend_right {
+	width: 870px;
+	height: 8600px;
+	margin-top: 5px;
+	float: right;
+}
+
+.Recommend_right_L1 {
+	width: 870px;
+	height: 314px;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+.Recommend_right_L1 img {
+	width: 100%;
+	height: 100%;
+	transform: scale(1, 1);
+	transition: all 0.5s;
+}
+
+.Recommend_right_L1>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.Recommend_right_L2 {
+	width: 870px;
+	height: 321px;
+	overflow: hidden;
+	display: flex;
+	justify-content: space-between;
+}
+
+.Recommend_right_L2 img {
+	width: 430px;
+	height: 321px;
+	transform: scale(1, 1);
+	transition: all 0.5s;
+}
+
+.Recommend_right_L2>a {
+	display: inline-block;
+	width: 430px;
+	height: 321px;
+	overflow: hidden;
+}
+
+.brand_story_h {
+	width: 870px;
+	height: 98px;
+}
+
+.brand_story {
+	width: 850px;
+	height: 244px;
+	margin: 0 auto;
+	border: 1px solid #ccddff;
+}
+
+.brand_story_img {
+	height: 244px;
+	width: 400px;
+	float: left;
+}
+
+.brand_story_img>img {
+	width: 100%;
+	height: 100%;
+}
+
+.brand_story_text {
+	width: 450px;
+	height: 244px;
+	float: right;
+}
+
+.brand_story_text>h3 {
+	width: 450px;
+	height: 41px;
+	text-align: center;
+	line-height: 41px;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.brand_story_text>p {
+	width: 430px;
+	padding-left: 20px;
+	height: 198px;
+	line-height: 24px;
+	font-size: 12px;
+	text-indent: 2em;
+}
+
+.brand_story_b {
+	width: 870px;
+	height: 620px;
+}
+
+.maintenance{
+    display: block;
+    margin: 0 60px;
+	text-align: center;
+	p{
+		
+	}
+    img{
+        width: 750px;
+        display: block;
+    }
+}
+
+.authenticity {
+	width: 870px;
+}
+
+.authenticity img {
+	width: 870px;
+	transform: scale(1, 1);
+	transition: all 0.5s;
+	cursor: pointer;
+}
+
+.authenticity_b {
+	overflow: hidden;
+}
+
+
+.about5lux_com_banner_box {
+	width: 870px;
+	height: 314px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+#about5lux_com_banner {
+	width: 4680px;
+	height: 314px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: 0;
+}
+
+#about5lux_com_banner li {
+	width: 870px;
+	height: 314px;
+	float: left;
+	list-style: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+#about5lux_com_banner li img {
+	width: 870px;
+	height: 314px;
+}
+
+.about5lux_com_banner_btn_L{
+	position: absolute;
+	top: 132px;
+	left: 25px;
+	width: 29px;
+	height: 49px;
+	z-index: 2;
+	cursor: pointer;
+}
+.about5lux_com_banner_btn_R{
+	position: absolute;
+	top: 132px;
+	right: 25px;
+	width: 29px;
+	height: 49px;
+	z-index: 2;
+	cursor: pointer;
+}
+.advantage{
+	margin-bottom: 20px;
+}
+.advantage_under{
+	width: 870px;
+	display: flex;
+	justify-content: space-between;
+}
+.advantage_under>a{
+	display: block;
+	width: 430px;
+}
+.advantage_under>a>img{
+	width: 430px;
+}
+.youmaylike_title{
+	width: 870px;
+	height: 26px;
+	margin-bottom: 25px;
+}
+.youmaylike_title>p{
+	float: left;
+	font-size: 14px;
+	line-height: 26px;
+	height: 26px;
+	margin-left: 590px;
+	margin-right: 28px;
+}
+.youmaylike_title>i{
+	display: inline-block;
+	float: left;
+	height: 26px;
+	line-height: 26px;
+	cursor: pointer;
+}
+.youmaylike_title>span,.youmaylike_title>b{
+	display: inline-block;
+	float: left;
+	height: 26px;
+	line-height: 26px;
+}
+.youmaylike_title_page{
+	font-weight: normal;
+}
+.youmaylike_banner{
+	width: 870px;
+	height: 314px;
+	position: relative;
+	overflow: hidden;
+}
+.youmaylike_banner_box{
+	width: 4350px;
+	height: 314px;
+	position: absolute;
+}
+.youmaylike_banner_box>ul{
+	width: 860px;
+	height: 314px;
+	padding-left: 10px;
+	float: left;
+	display: flex;
+	justify-content: space-between;
+}
+.youmaylike_banner_box>ul>li{
+	width: 198px;
+	height: 312px;
+	border: 1px solid #cccc;
+	float: left;
+}
+.youmaylike_banner_box>ul>li:nth-last-of-type{
+	margin: 0;
+}
+.youmaylike_banner_box>ul>li>a{
+	display: block;
+}
+.youmaylike_banner_box>ul>li img{
+	width: 198px;
+	height: 198px;
+}
+.youmaylike_banner_box>ul>li>h4{
+	text-align: center;
+	line-height: 24px;
+	font-size: 12px;
+	height: 24px;
+}
+.youmaylike_banner_box>ul>li>p{
+	text-align: center;
+	width: 198px;
+	line-height: 24px;
+	font-size: 12px;
+	height: 24px;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.youmaylike_banner_box>ul>li>p>a:hover{
+	color: #c8a985;
+}
+.youmaylike_banner_box>ul>li>i{
+	display: block;
+	text-align: center;
+	line-height: 24px;
+	font-size: 12px;
+	height: 24px;
+	color: #c8a985;
+}
+// 内容结束；
 
 
 
@@ -558,32 +1579,5 @@ footer{
         }
     }
 }
-#popup{
-    height: 120px;
-    width: 100%;
-    background: url(http://img550.5lux.com.cn/2016/12/27/mn/148282825934_2x120.png) repeat-x center top;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
-    .popup-box{
-        width: 1210px;
-        height: 120px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        margin-left: -605px;
-        a{
-            display: block;
-            width: 70px;
-            height: 47px;
-            position: absolute;
-            z-index: 3;
-            right: 0;
-            top: 0;
 
-            
-        }
-    }
-}
 // 底部结束；

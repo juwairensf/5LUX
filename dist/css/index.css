@@ -258,7 +258,7 @@ header {
         height: 30px;
         background: url(http://img.5lux.com.cn/vendor/images/v30/overseadef.jpg) no-repeat;
         background-size: 100% 100%; }
-      header .middle .middle-right p {
+      header .middle .middle-right .car-container {
         position: relative;
         margin-left: 10px;
         width: 94px;
@@ -270,13 +270,65 @@ header {
         float: right;
         color: #666;
         background: url(../images/brandstore_share.png) no-repeat -376px -405px; }
-        header .middle .middle-right p img {
+        header .middle .middle-right .car-container:hover {
+          background: rgba(0, 0, 0, 0.3);
+          color: #CF0101; }
+        header .middle .middle-right .car-container a {
           position: absolute;
-          left: 10px;
+          left: -20px;
           top: 2px; }
+        header .middle .middle-right .car-container .car-list {
+          display: none;
+          width: 470px;
+          position: absolute;
+          z-index: 11;
+          right: 0;
+          top: 32px;
+          padding-bottom: 10px;
+          background: rgba(0, 0, 0, 0.3); }
+          header .middle .middle-right .car-container .car-list ul h3 {
+            color: #fff;
+            font-weight: bold;
+            font-size: 18px;
+            height: 30px;
+            line-height: 30px;
+            border-bottom: 3px double #fff; }
+          header .middle .middle-right .car-container .car-list ul hr {
+            color: #CF0101; }
+          header .middle .middle-right .car-container .car-list ul li {
+            padding: 10px 10px;
+            height: 75px;
+            box-shadow: 0 0 5px #ddd;
+            margin-bottom: 10px; }
+            header .middle .middle-right .car-container .car-list ul li .buy_img {
+              float: left;
+              width: 50px;
+              height: 75px; }
+            header .middle .middle-right .car-container .car-list ul li strong {
+              color: #fff;
+              display: inline-block;
+              float: left;
+              margin-top: 10px;
+              font-size: 16px;
+              width: 100px;
+              text-align: left;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden; }
+            header .middle .middle-right .car-container .car-list ul li #title {
+              width: 200px; }
+          header .middle .middle-right .car-container .car-list button {
+            display: block;
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            margin-left: 20px;
+            border: none;
+            outline: none; }
   header nav {
     height: 38px;
-    background: #000; }
+    border-bottom: 2px solid #ddd;
+    background: url(http://www.5lux.com/vendor/images/v30/navi_1pxbg.png) repeat-x; }
     header nav .nav-con {
       width: 1210px;
       margin: 0 auto; }
@@ -307,21 +359,23 @@ header {
       header nav .nav-con ul li:nth-child(1) {
         width: 130px;
         background: #CF0101; }
-      header nav .nav-con ul li:nth-child(9) {
+      header nav .nav-con ul .sea {
+        margin-left: 13px; }
+      header nav .nav-con ul li:last-child {
         float: right;
         margin-right: 10px;
         width: 130px; }
-        header nav .nav-con ul li:nth-child(9) strong {
+        header nav .nav-con ul li:last-child strong {
           display: block;
           float: left;
           width: 30px;
           height: 40px;
           margin-right: 13px; }
-        header nav .nav-con ul li:nth-child(9) strong:nth-child(1) {
+        header nav .nav-con ul li:last-child strong:nth-child(1) {
           background: url(../images/share02.png) no-repeat -237px -66px; }
-        header nav .nav-con ul li:nth-child(9) strong:nth-child(2) {
+        header nav .nav-con ul li:last-child strong:nth-child(2) {
           background: url(../images/share02.png) no-repeat -296px -66px; }
-        header nav .nav-con ul li:nth-child(9) strong:nth-child(3) {
+        header nav .nav-con ul li:last-child strong:nth-child(3) {
           background: url(../images/share02.png) no-repeat -354px -66px; }
 
 #banner {
@@ -393,7 +447,7 @@ header {
   height: 12px;
   border-radius: 50%;
   background: #fff;
-  margin: 2px 6px 0; }
+  margin: 2px 6px; }
 
 #banner .pages span.active {
   background: #D00000; }
@@ -524,6 +578,36 @@ section {
       padding: 0 9px;
       padding-top: 4px;
       margin-right: 8px; }
+      section .shopping .goods .goods1 .goods-links {
+        overflow: hidden;
+        border-bottom: 1px dashed #d4d4d4;
+        padding-bottom: 16px;
+        width: 220px;
+        height: 197px; }
+        section .shopping .goods .goods1 .goods-links li {
+          float: left;
+          height: 36px;
+          line-height: 36px;
+          width: 110px;
+          font-size: 14px;
+          text-align: left;
+          margin-right: 0; }
+          section .shopping .goods .goods1 .goods-links li a {
+            float: left;
+            color: #666; }
+      section .shopping .goods .goods1 .slide-box li {
+        margin-top: 20px;
+        width: 224px;
+        height: 114px; }
+        section .shopping .goods .goods1 .slide-box li a {
+          display: block;
+          float: left; }
+          section .shopping .goods .goods1 .slide-box li a img {
+            display: block;
+            width: 90px;
+            height: auto;
+            margin-bottom: 12px;
+            margin-left: 12px; }
     section .shopping .goods .goods2 {
       float: left;
       width: 390px;

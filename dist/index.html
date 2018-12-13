@@ -10,11 +10,12 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/banner.js"></script>
     <script src="./js/common.js"></script>
+    <script src="./js/details.js"></script>
 </head>
 <body>
     <!-- 头部广告开始 -->
     <div id="active">
-        <a href="#">
+        <a href="http://localhost:8888/active.html">
             <img src="http://img550.5lux.com.cn/2018/11/22/qr/154288026284_1300x80.jpg" alt="">
         </a>
     </div>
@@ -41,7 +42,7 @@
         </div>
     <!-- 右边菜单结束 -->
     <header>
-        <div class="top">
+            <div class="top">
                 <div class="container-top">
                     <ul class="clearfix">
                         <li>
@@ -55,11 +56,11 @@
                     </ul>
                     <ul class="log">
                         <li>
-                            <a href="javascript:void(0)">登录</a>
+                            <a href="http://localhost:8888/login.html">登录</a>
                         </li>
                         <li>
                             <span></span>
-                            <a href="javascript:void(0)">注册</a>
+                            <a href="http://localhost:8888/register.html">注册</a>
                         </li>
                         <li id="menu">
                             <a href="javascript:void(0)">我的第五大道</a>
@@ -82,8 +83,8 @@
                         </li>
                     </ul>
                 </div>
-                
-                
+               
+               
             </div>
             <div class="middle clearfix">
                 <div class="middle-left clearfix">
@@ -98,10 +99,24 @@
                 </div>
                 <div class="middle-right">
                     <span></span>
-                    <p>
-                        <img src="http://www.5lux.com/vendor/images/v30/v30cart.png" alt="">
-                        （0）
-                    </p>
+                    <div class="car-container">
+                        <a href=""> <img src="http://www.5lux.com/vendor/images/v30/v30cart.png" alt=""></a>
+						
+						<div class="car-list">
+							
+							<ul>
+								<h3>购物车商品</h3>
+								<!-- <li class="clearfix">
+									<img class="buy_img" src="http://img550.5lux.com.cn/2017/10/19/ef/150839370254_800x800.jpg" alt="">
+								 	<strong id="title">香水</strong >
+									<strong id="price">￥6666</strong >
+									<strong id="mount">1</strong >
+									
+								</li>  -->
+							</ul>
+							<button id="clear">清空购物车</button>
+					  </div>
+                    </div>
                 </div>
             </div>
             <nav>
@@ -129,7 +144,7 @@
                             <a href="javascript:void(0)">海外馆</a>
                         </li>
                         <li>
-                            <a href="javascript:void(0)">时尚</a>
+                            <a href="http://localhost:8888/fashion.html">时尚</a>
                         </li>
                         <li>
                             <a href="javascript:void(0)">特惠</a>
@@ -158,31 +173,31 @@
     </header>
     <!-- 轮播图开始 -->
     <div id="banner">
-        <div class="btns">
-            <div class="left"><img src="http://www.5lux.com/vendor/images/v30/templateleft.png" alt=""></div>
-            <div class="right"><img src="http://www.5lux.com/vendor/images/v30/templateright.png" alt=""></div>
-            
-        </div>
-        <div class="container">
-            <div class="wrap">
-                <div class="slide slide-show"><img src="http://img550.5lux.com.cn/2018/12/03/de/154382088741_1440x520.jpg" alt=""></div>
-                <div class="slide"><img src="http://img550.5lux.com.cn/2018/11/11/st/154190270819_1440x520.jpg" alt=""></div>
-                <div class="slide"><img src="http://img550.5lux.com.cn/2018/12/03/bc/154381547785_1440x520.jpg" alt=""></div>
-                <div class="slide"><img src="http://img550.5lux.com.cn/2018/11/26/vw/154322540943_1440x520.jpg" alt=""></div>
-                <div class="slide"><img src="http://img550.5lux.com.cn/2018/11/14/pq/154218767833_1440x520.jpg" alt=""></div>
-                <div class="slide"><img src="http://img550.5lux.com.cn/2018/11/28/lm/154336900563_1440x520.jpg" alt=""></div>
-                <div class="slide"><img src="http://img550.5lux.com.cn/2018/11/30/ef/154357207167_1440x520.jpg" alt=""></div>
+            <div class="btns">
+                <div class="left"><img src="http://www.5lux.com/vendor/images/v30/templateleft.png" alt=""></div>
+                <div class="right"><img src="http://www.5lux.com/vendor/images/v30/templateright.png" alt=""></div>
+                
             </div>
-        </div>
-        <div class="pages">
-            <!-- <span class="active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span> -->
-        </div>
+            <div class="container">
+                <div class="wrap">
+                    <div class="slide slide-show"><img src="http://img550.5lux.com.cn/2018/12/03/de/154382088741_1440x520.jpg" alt=""></div>
+                    <div class="slide"><img src="http://img550.5lux.com.cn/2018/11/11/st/154190270819_1440x520.jpg" alt=""></div>
+                    <div class="slide"><img src="http://img550.5lux.com.cn/2018/12/03/bc/154381547785_1440x520.jpg" alt=""></div>
+                    <div class="slide"><img src="http://img550.5lux.com.cn/2018/11/26/vw/154322540943_1440x520.jpg" alt=""></div>
+                    <div class="slide"><img src="http://img550.5lux.com.cn/2018/11/14/pq/154218767833_1440x520.jpg" alt=""></div>
+                    <div class="slide"><img src="http://img550.5lux.com.cn/2018/11/28/lm/154336900563_1440x520.jpg" alt=""></div>
+                    <div class="slide"><img src="http://img550.5lux.com.cn/2018/11/30/ef/154357207167_1440x520.jpg" alt=""></div>
+                </div>
+            </div>
+            <div class="pages">
+                <!-- <span class="active"></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span> -->
+            </div>
     </div>
     <!-- 轮播图结束 -->
    
@@ -313,8 +328,8 @@
                     </div>
                  </li>
              </ul>
-             <!-- 经典包款开始 -->
-             <div class="goodstitle clearfix">
+            <!-- 经典包款开始 -->
+            <div class="goodstitle clearfix">
                  <img src="http://www.5lux.com/vendor/images/v30/goodtitle1.jpg" alt="">
                  <div class="right clearfix">
                      <span></span>
@@ -335,6 +350,14 @@
                          <li><a href="javascript:void(0)">斜挎包</a></li>
                          <li><a href="javascript:void(0)">化妆包</a></li>
                      </ul>
+                     <ul class="slide-box">
+                         <li>
+                             <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477406185992.png" alt=""></a>
+                             <a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2017/05/15/pq/149482910148_214x108.jpg" alt=""></a>
+                             <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477378665957.png" alt=""></a>
+                             <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477318724845.png" alt=""></a>
+                         </li>
+                     </ul>
                  </div>
                  <div class="goods2">
                      <img src="http://img550.5lux.com.cn/2018/12/06/kl/154408136583_390x370.jpg" alt="">
@@ -345,9 +368,177 @@
                      <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/pq/154458309665_275x180.jpg" alt=""></a></div>
                      <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/de/154458309768_275x180.jpg" alt=""></a></div>
                  </div>
-             </div>
-             <!-- 经典包款结束 -->
-         </div>
+            </div>
+            <!-- 经典包款结束 -->
+            <!-- 典藏腕表开始 -->
+            <div class="goodstitle clearfix">
+                <img src="http://www.5lux.com/vendor/images/v30/goodtitle2.jpg" alt="">
+                <div class="right clearfix">
+                    <span></span>
+                    <span>SHOW MORE</span>
+                </div>
+            </div>
+            <div class="goods clearfix">
+                <div class="goods1">
+                    <ul class="goods-links">
+                        <li><a href="javascript:void(0)">时尚</a></li>
+                        <li><a href="javascript:void(0)">瑞表</a></li>
+                        <li><a href="javascript:void(0)">德国</a></li>
+                        <li><a href="javascript:void(0)">限量版</a></li>
+                        <li><a href="javascript:void(0)">法国</a></li>
+                        <li><a href="javascript:void(0)">机械表</a></li>
+                        <li><a href="javascript:void(0)">石英表</a></li>
+                        <li><a href="javascript:void(0)">三针</a></li>
+                        <li><a href="javascript:void(0)">计时码表</a></li>
+                        <li><a href="javascript:void(0)">瑞士</a></li>
+                    </ul>
+                    <ul class="slide-box">
+                        <li>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477258985459.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477460557662.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/10/10/mn/153914012860_214x108.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/10/09/ab/153908669189_214x108.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="goods2">
+                    <img src="http://img550.5lux.com.cn/2018/12/06/ij/154408218186_390x370.jpg" alt="">
+                </div>
+                <div class="goods3 clearfix">
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/mn/154458062695_275x180.jpg" alt=""></a></div>
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/fg/154458062727_275x180.jpg" alt=""></a></div>
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/ab/154458062744_275x180.jpg" alt=""></a></div>
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/tu/154458062817_275x180.jpg" alt=""></a></div>
+                </div>
+            </div>
+            <!-- 典藏腕表结束 -->
+            <!-- 精致配饰开始 -->
+            <div class="goodstitle clearfix">
+                <img src="http://www.5lux.com/vendor/images/v30/goodtitle6.jpg" alt="">
+                <div class="right clearfix">
+                    <span></span>
+                    <span>SHOW MORE</span>
+                </div>
+            </div>
+            <div class="goods clearfix">
+                <div class="goods1">
+                    <ul class="goods-links">
+                        <li><a href="javascript:void(0)">首饰</a></li>
+                        <li><a href="javascript:void(0)">腰带</a></li>
+                        <li><a href="javascript:void(0)">领带/领结/领带夹</a></li>
+                        <li><a href="javascript:void(0)">围巾/丝巾</a></li>
+                        <li><a href="javascript:void(0)">帽子</a></li>
+                        <li><a href="javascript:void(0)">手套</a></li>
+                        <li><a href="javascript:void(0)">伞</a></li>
+                        <li><a href="javascript:void(0)">挂饰</a></li>
+                        <li><a href="javascript:void(0)">手杖</a></li>
+                        <li><a href="javascript:void(0)">眼镜/镜架</a></li>
+                    </ul>
+                    <ul class="slide-box">
+                        <li>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477454559904.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/10/09/kl/153908402411_214x108.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477284515625.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477318724845.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="goods2">
+                    <img src="http://img550.5lux.com.cn/2018/11/20/bc/154270723823_390x370.jpg" alt="">
+                </div>
+                <div class="goods3 clearfix">
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/kl/154458127198_275x180.jpg" alt=""></a></div>
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/de/154458062575_275x180.jpg" alt=""></a></div>
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/gh/154458062588_275x180.jpg" alt=""></a></div>
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/cd/154458127173_275x180.jpg" alt=""></a></div>
+                </div>
+            </div>
+            <!-- 精致配饰结束 -->
+            <!-- 个护化妆开始 -->
+            <div class="goodstitle clearfix">
+                <img src="http://www.5lux.com/vendor/images/v30/goodtitle4.jpg" alt="">
+                <div class="right clearfix">
+                    <span></span>
+                    <span>SHOW MORE</span>
+                </div>
+            </div>
+            <div class="goods clearfix">
+                <div class="goods1">
+                    <ul class="goods-links">
+                        <li><a href="javascript:void(0)">护肤</a></li>
+                        <li><a href="javascript:void(0)">彩妆</a></li>
+                        <li><a href="javascript:void(0)">香水</a></li>
+                        <li><a href="javascript:void(0)">美体</a></li>
+                        <li><a href="javascript:void(0)">套装精品</a></li>
+                        <li><a href="javascript:void(0)">旅行套装</a></li>
+                        <li><a href="javascript:void(0)">美妆工具</a></li>
+                        <li><a href="javascript:void(0)">全身护理</a></li>
+                        <li><a href="javascript:void(0)">神奇面霜</a></li>
+                        <li><a href="javascript:void(0)">古龙水</a></li>
+                    </ul>
+                    <ul class="slide-box">
+                        <li>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477298392255.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477305449735.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477312236406.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477320365133.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="goods2">
+                    <img src="http://img550.5lux.com.cn/2018/12/06/mn/154408275241_390x370.jpg" alt="">
+                </div>
+                <div class="goods3 clearfix">
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/kl/154458309319_275x180.jpg" alt=""></a></div>
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/vw/154458309482_275x180.jpg" alt=""></a></div>
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/wx/154458309498_275x180.jpg" alt=""></a></div>
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/12/jk/154458309584_275x180.jpg" alt=""></a></div>
+                </div>
+            </div>
+            <!-- 个护化妆结束 -->
+            <!-- 时尚鞋服开始 -->
+            <div class="goodstitle clearfix">
+                <img src="http://www.5lux.com/vendor/images/v30/goodtitle3.jpg" alt="">
+                <div class="right clearfix">
+                    <span></span>
+                    <span>SHOW MORE</span>
+                </div>
+            </div>
+            <div class="goods clearfix">
+                <div class="goods1">
+                    <ul class="goods-links">
+                        <li><a href="javascript:void(0)">上装</a></li>
+                        <li><a href="javascript:void(0)">裤装</a></li>
+                        <li><a href="javascript:void(0)">裙装</a></li>
+                        <li><a href="javascript:void(0)">内衣</a></li>
+                        <li><a href="javascript:void(0)">套装</a></li>
+                        <li><a href="javascript:void(0)">运动服</a></li>
+                        <li><a href="javascript:void(0)">连衣裙</a></li>
+                        <li><a href="javascript:void(0)">复古</a></li>
+                        <li><a href="javascript:void(0)">欧美</a></li>
+                        <li><a href="javascript:void(0)">修身</a></li>
+                    </ul>
+                    <ul class="slide-box">
+                        <li>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477468896235.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477468884790.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477258985459.png" alt=""></a>
+                            <a href="javascript:void(0)"><img src="http://img.5lux.com.cn/511/avatar/2015/11/17/14477452686893.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="goods2">
+                    <img src="http://img550.5lux.com.cn/2018/12/06/qr/154408320141_390x370.jpg" alt="">
+                </div>
+                <div class="goods3 clearfix">
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/11/ab/154451202884_275x180.jpg" alt=""></a></div>
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/11/hi/154451202971_275x180.jpg" alt=""></a></div>
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/11/qr/154451202955_275x180.jpg" alt=""></a></div>
+                    <div class="goods3-pic"><a href="javascript:void(0)"><img src="http://img550.5lux.com.cn/2018/12/11/ef/154451203044_275x180.jpg" alt=""></a></div>
+                </div>
+            </div>
+            <!-- 时尚鞋服结束 -->
+        </div>
          <!-- 购物中心结束 -->
          <!-- 主题活动开始 -->
         <div class="promotion">
