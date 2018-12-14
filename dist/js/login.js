@@ -20,7 +20,7 @@ $(function(){
    // input框聚焦改变边框效果；
     var $input=$("input");
     $($input).each(function(item){
-        console.log($input[item]);
+        // console.log($input[item]);
         $($input[item]).on("focus",function(){
             $($input[item]).css({
                 border: "1px solid #333"

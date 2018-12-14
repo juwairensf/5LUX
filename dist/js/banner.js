@@ -69,9 +69,9 @@ $(function(){
 
 
         // 更改按钮；
-        $pages.children().eq(index).addClass("active")
+        $pages.children().eq(index).addClass("active1")
         .siblings("span")
-        .removeClass("active");
+        .removeClass("active1");
     }
 
 
@@ -82,7 +82,7 @@ $(function(){
         for(var i = 0;i<$slides.length;i++){
             var $span=$("<span>");
             if(i===index){
-                $span.addClass("active");
+                $span.addClass("active1");
             }
             $pages.append($span);
         }

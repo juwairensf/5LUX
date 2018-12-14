@@ -22,23 +22,15 @@ gulp.task("connect",()=>{
         root:"./dist",
         port:8888,
         livereload:true,
-        middleware:function(connect,opt){
-            return [
-                proxy("/mogu",{
-                    target:"https://list.mogujie.com",
-                    changeOrigin:true,
+        middleware:function(){ //中间件选项
+            // console.log(opt)
+            return[
+                proxy("/api",{
+                    target:"http://localhost:3000",
                     pathRewrite:{
-                        "^/mogu":"/"
+                        '^/api' : '/',  //rewrite path
                     }
-                }),
-                proxy("/douban",{
-                    target:"http://api.douban.com",
-                    changeOrigin:true,
-                    pathRewrite:{
-                        "^/douban":"/"
-                    }
-                }),
-                
+                })
             ]
         }
     });

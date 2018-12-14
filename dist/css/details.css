@@ -396,14 +396,19 @@ header {
   border: 1px solid #ccc;
   margin-bottom: 1px;
   position: relative; }
+  .Magnifier_shop .pop {
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    z-index: 2; }
 
 .Magnifier_shop > img {
   width: 400px;
   height: 600px; }
 
 #Magnifier_shop_S {
-  width: 240px;
-  height: 240px;
+  width: 100px;
+  height: 150px;
   background: transparent;
   box-shadow: 0 0 5px 3px #666;
   opacity: 0.4;
@@ -425,7 +430,9 @@ header {
 .Magnifier_shop_B > img {
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  width: 1600px;
+  height: 2400px; }
 
 .Magnifier_shop_list {
   margin-top: 20px;

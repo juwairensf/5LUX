@@ -149,76 +149,81 @@ $(function(){
     })
 
 
-    // 鼠标移入；
-    $(".Magnifier_shop").on("mouseenter",function(){
-        $(".Magnifier_shop_B").css("display","block");
-        $("#Magnifier_shop_S").css("display","block");
+//     // 鼠标移入；
+    // $(".Magnifier_shop").on("mouseenter",function(){
+    //     $(".Magnifier_shop_B").css("display","block");
+    //     $("#Magnifier_shop_S").css("display","block");
 
-    })
-
-
-    //绑定鼠标在原图窗口移动的事件
-    $('.Magnifier_shop').mousemove(function(e){
-
-        // 获取鼠标当前的位置
-        var x=e.clientX;
-        var y=e.clientY;
-        // 获取原图窗口距离文档的偏移位置
-        var sX=$('.Magnifier_shop').offset().left;
-        var sY=$('.Magnifier_shop').offset().top;
-
-        // 计算鼠标的相对位置（相对于原图窗口的偏移距离）
-        var mx=x-sX;
-        var my=y-sY;
-
-        // 获取小框框的宽高
-        var mw=$('#Magnifier_shop_S').width()/2;
-        var mh=$('#Magnifier_shop_S').height()/2;
-
-        // 鼠标移动后小框框的移动距离
-        $('#Magnifier_shop_S').css({left:mx-mw+'px',top:my-mh+'px'});
-
-        // 获取小框框的偏移位置
-            var lw=$('#Magnifier_shop_S').position().left;
-            var lh=$('#Magnifier_shop_S').position().top;
+    // })
 
 
-        // 判断边界（小框框只能在原图窗口范围内移动）
-            var maxW=$('.Magnifier_shop').width()-$('#Magnifier_shop_S').width()
-            var maxH=$('.Magnifier_shop').height()-$('#Magnifier_shop_S').height()
-            // 左边界
-            if(lw<=0){$('#Magnifier_shop_S').css('left','0px');}
-            // 右边界
-            if(lw>=maxW){
-                $('#Magnifier_shop_S').css('left',maxW+'px');
-            }
-            // 上边界
-            if(lh<=0){$('#Magnifier_shop_S').css('top','0px');}
-            // 下边界
-            if(lh>=maxH){
-                $('#Magnifier_shop_S').css('top',maxH+'px');
-            }
+//     //绑定鼠标在原图窗口移动的事件
+//     $('.Magnifier_shop').mousemove(function(e){
 
-            // 获取小框框的偏移位置
-            var lw=$('#Magnifier_shop_S').position().left;
-            var lh=$('#Magnifier_shop_S').position().top;
-        // 计算鼠标在小图里的位置  *2.5计算大图移动的比例
-            var newX=lw*2.5;
-            var newY=lh*2.5;
+//         // 获取鼠标当前的位置
+//         var x=e.clientX;
+//         var y=e.clientY;
+//         // 获取原图窗口距离文档的偏移位置
+//         var sX=$('.Magnifier_shop').offset().left;
+//         var sY=$('.Magnifier_shop').offset().top;
+
+//         // 计算鼠标的相对位置（相对于原图窗口的偏移距离）
+//         // var mx=x-sX;
+//         // var my=y-sY;
+
+//         var mx=e.clientX;
+//         var my=e.clientY;
+
+//         // 获取小框框的宽高
+//         var mw=$('#Magnifier_shop_S').width()/2;
+//         var mh=$('#Magnifier_shop_S').height()/2;
+
+//         // 鼠标移动后小框框的移动距离
+//         $('#Magnifier_shop_S').css({left:mx-mw+'px',top:my-mh+'px'});
+
+//         // 获取小框框的偏移位置
+//             var lw=$('#Magnifier_shop_S').position().left;
+//             var lh=$('#Magnifier_shop_S').position().top;
+
+
+//         // 判断边界（小框框只能在原图窗口范围内移动）
+//             var maxW=$('.Magnifier_shop').width()-$('#Magnifier_shop_S').width()
+//             var maxH=$('.Magnifier_shop').height()-$('#Magnifier_shop_S').height()
+//             // 左边界
+//             if(lw<=0){$('#Magnifier_shop_S').css('left','0px');}
+//             // 右边界
+//             if(lw>=maxW){
+//                 $('#Magnifier_shop_S').css('left',maxW+'px');
+//             }
+//             // 上边界
+//             if(lh<=0){$('#Magnifier_shop_S').css('top','0px');}
+//             // 下边界
+//             if(lh>=maxH){
+//                 $('#Magnifier_shop_S').css('top',maxH+'px');
+//             }
+
+//             // 获取小框框的偏移位置
+//             var lw=$('#Magnifier_shop_S').position().left;
+//             var lh=$('#Magnifier_shop_S').position().top;
+//             // console.log(lw,lh)
+
+//         // 计算鼠标在小图里的位置  *1计算大图移动的比例
+//             var newX=lw*1;
+//             var newY=lh*1;
 
 
 
-        $('.Magnifier_shop_B img').css({left:-newX+'px',top:-newY+'px'});
-})
+//         $('.Magnifier_shop_B img').css({left:-newX+'px',top:-newY+'px'});
+// })
 
 
 
-    // 鼠标移出；
-    $(".Magnifier_shop").on("mouseleave",function(){
-        $(".Magnifier_shop_B").css("display","none");
-        $("#Magnifier_shop_S").css("display","none");
+//     // 鼠标移出；
+//     $(".Magnifier_shop").on("mouseleave",function(){
+//         $(".Magnifier_shop_B").css("display","none");
+//         $("#Magnifier_shop_S").css("display","none");
 
-    })
+//     })
 
 
 
@@ -270,8 +275,8 @@ $(function(){
         
     //     // 比例 已知 是4;
     //     // 比例分成两部分;
-    //     var propX = oBig.offsetWidth / oFrame.offsetWidth;
-    //     var propY = oBig.offsetHeight / oFrame.offsetHeight;
+        // var propX = oBig.offsetWidth / oFrame.offsetWidth;
+        // var propY = oBig.offsetHeight / oFrame.offsetHeight;
 
     //     // console.log(propX,propY);
         
