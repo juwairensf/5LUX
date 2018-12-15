@@ -533,9 +533,6 @@ section {
         position: relative;
         margin-right: 8px; }
         section .shopping .shopping-center li div {
-          position: absolute;
-          left: 0;
-          top: 0;
           width: 234px;
           height: 100px; }
           section .shopping .shopping-center li div a:nth-child(1) {
@@ -547,6 +544,23 @@ section {
             text-align: center;
             font-size: 14px;
             color: #fff; }
+          section .shopping .shopping-center li div a:nth-child(2) {
+            position: absolute;
+            z-index: 3;
+            width: 234px;
+            display: block;
+            bottom: 0;
+            height: 0;
+            background: #999;
+            color: #fff;
+            margin-top: -50px;
+            font-size: 16px;
+            line-height: 50px;
+            text-align: center;
+            transition: .5s; }
+          section .shopping .shopping-center li div:hover a:nth-child(2) {
+            height: 50px;
+            background: #000; }
     section .shopping .goodstitle {
       width: 1210px;
       margin: 0 auto; }

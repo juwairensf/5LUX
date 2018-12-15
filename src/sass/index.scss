@@ -695,9 +695,6 @@ section{
                 position: relative;
                 margin-right: 8px;
                 div{
-                    position: absolute;
-                    left: 0;
-                    top: 0;
                     width: 234px;
                     height: 100px;
                     a:nth-child(1){
@@ -709,6 +706,26 @@ section{
                         text-align: center;
                         font-size: 14px;
                         color: #fff;
+                    }
+                    a:nth-child(2){
+                        position: absolute;
+                        z-index: 3;
+                        width: 234px;
+                        display: block;
+                        bottom: 0;
+                        height: 0;
+                        // height: 50px;
+                        background: #999;
+                        color: #fff;
+                        margin-top: -50px;
+                        font-size: 16px;
+                        line-height: 50px;
+                        text-align: center;
+                        transition: .5s;
+                    }
+                    &:hover a:nth-child(2){
+                        height: 50px;
+                        background: #000;
                     }
                 }
             }
